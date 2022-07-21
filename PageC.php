@@ -4,7 +4,6 @@
       <meta charset = "utf-8">
   </head>
     
-  <body>
     <?php
         
       $server = "ec2-52-48-159-67.eu-west-1.compute.amazonaws.com";
@@ -21,9 +20,8 @@
     
     ?> 
     
-    INSERT INTO order (商品名, 価格, 登録日)VALUES(‘MacBook Pro 13インチ’, 148200, ‘2022-07-14’);
+    INSERT INTO order (商品名, 価格)VALUES(‘$shohin’, $kingaku);
 
     
     
-  </body>
-</html
+</html>
