@@ -23,7 +23,7 @@
     
     ?> 
     
-  
+    print "$shohin $kingaku"
    
     
      
