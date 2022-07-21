@@ -23,9 +23,5 @@
     
     ?> 
     
-    print "$shohin $kingaku"
-   
-    
-     
   </body>
 </html
