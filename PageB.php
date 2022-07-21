@@ -14,10 +14,24 @@
     print "$shohin $kingaku";
 
   ?>
-
+  
+  <br>
+  <button onclick = "add()"> いいよ</button>
+  
   <button onclick = "location.href = 'index.php'">だめ</button>
   
-  <button onclick = "location.href = 'PageC.php'">いいよ</button>
-  
-</body
+</body  
 </html>
+
+  
+<script>
+  
+  function add(){
+    
+    alert("ついかしちゃった")
+    
+    <a href = 'index.php'>
+    
+  }
+  
+</script>
