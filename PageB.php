@@ -41,6 +41,8 @@
     ?>
     
     INSERT INTO "order" (商品名、価格) VALUES($shohin, $kingaku)
+    
+    location.href = 'index.php'
 
   }
   
