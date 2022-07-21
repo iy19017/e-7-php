@@ -21,5 +21,9 @@
     
     ?> 
     
+    INSERT INTO order (商品名, 価格, 登録日)VALUES(‘MacBook Pro 13インチ’, 148200, ‘2022-07-14’);
+
+    
+    
   </body>
 </html
