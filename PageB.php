@@ -28,9 +28,7 @@
   
   function add(){
     
-    alert("ついかしちゃった")
-    
-    <a href = 'index.php'>
+    <a href = "index.php">
     
   }
   
