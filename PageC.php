@@ -19,8 +19,6 @@
     
       $kingaku = $_POST['money'];
     
-      INSERT INTO "order" (商品名、価格) VALUES($shohin, $kingaku)
-    
     ?> 
     
   </body>
