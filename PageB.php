@@ -11,9 +11,13 @@
     
     $kingaku = $_GET['money'];
     
-    print "$shohin $kingaku";  
-  
+    print "$shohin $kingaku";
+
   ?>
 
+  <button onclick = "location.href = 'index.php'">だめ</button>
+  
+  <button onclick = "location.href = 'PageC.php'">いいよ</button>
+  
 </body
 </html>
