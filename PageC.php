@@ -23,24 +23,9 @@
     
     ?> 
     
-    <br>
+  
+   
     
-    print "<table border=1 cellspacing=1 cellpadding=1>Y=n"; // 表の開始 (HTML タグ)
-    
-    print "<tr>";　　 // 表の見出し行の始まり
-    print "<th>company</th>"; // 表の見出し company
-    print "<th>turnover</th>"; // 表の見出し turnover
-    print "</tr>";　　　　　　 // 表の見出し行の終わり
-
-    // データベース検索結果を 1行ずつ取り出して連想配列へ格納，HTML 表として出力
-    $rs = $result->fetchAll ();
-    foreach ($rs as $row):
-    print "<tr>";　　　　　　 // 表の明細行の始まり
-    print ’<td>’.$row[’company’]."</td>";
-    print ’<td>’.$row[’turnover’]."</td>";
-    print "</tr>Y=n";　　　　　　 // 表の明細行の終わり
-    endforeach;
-    print "</table>Y=n";　
      
   </body>
 </html
