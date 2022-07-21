@@ -11,7 +11,7 @@
     
     $kingaku = $_GET['money'];
     
-    print $shohin $kingaku;  
+    print "$shohin $kingaku";  
   
   ?>
 
