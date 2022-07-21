@@ -39,6 +39,8 @@
     $connect = new PDO("pgsql:host=$server; dbname=$database; port=$port_number; user=$user_id; password=$user_password");
     
     INSERT INTO "order" (商品名、価格) VALUES($shohin, $kingaku)
+      
+    ?>
     
   }
   
