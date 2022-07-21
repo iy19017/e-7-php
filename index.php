@@ -5,7 +5,7 @@
   </head>
     
   <body>
-      <form action = "PageB.php" method = "get">
+      <form action = "PageB.php" method = "POST">
         <input type = "text" name = "name" value = "" size = "20" maxlength = "20"><br>
         <input type = "text" name = "money" value = "" size = "20" maxlength = "20"><br>
         <input type = "submit" value = "送信">
