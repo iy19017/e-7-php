@@ -13,10 +13,6 @@
       $user_password = "bb16bd25fb0ee94746f9270dc541f7e3d8d1c2a9eeeb76b299795c9de6b80aab"; 
 
       $connect = new PDO("pgsql:host=$server; dbname=$database; port=$port_number; user=$user_id; password=$user_password");
-      
-      $shohin = $_POST['name'];
-    
-      $kingaku = $_POST['money'];
   
       print "$shohin $kingaku";
   
