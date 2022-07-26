@@ -18,10 +18,6 @@
     
       $kingaku = $_POST['money'];
   
-   
-    
-      
-  
       print "$shohin $kingaku";
   
     ?> 
