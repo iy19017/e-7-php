@@ -7,6 +7,8 @@
   <body>
 
   <?php
+    
+    grobal $shohin, $kingkau;
   
     $shohin = $_POST['name'];
     
