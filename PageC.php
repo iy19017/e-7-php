@@ -14,9 +14,9 @@
 
       $connect = new PDO("pgsql:host=$server; dbname=$database; port=$port_number; user=$user_id; password=$user_password");
   
-      $shohin = $_POST['name'];
+      $shohin = $_GET['name'];
     
-      $kingaku = $_POST['money'];
+      $kingaku = $_GET['money'];
   
       print "$shohin $kingaku";
   
