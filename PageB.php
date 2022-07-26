@@ -8,8 +8,6 @@
 
   <?php
     
-    grobal $shohin, $kingkau;
-  
     $shohin = $_POST['name'];
     
     $kingaku = $_POST['money'];
