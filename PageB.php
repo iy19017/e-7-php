@@ -8,9 +8,9 @@
 
   <?php
     
-    $shohin = $_POST['name'];
+    $shohin = $_GET['name'];
     
-    $kingaku = $_POST['money'];
+    $kingaku = $_GET['money'];
     
     print "$shohin $kingaku";
 
