@@ -25,6 +25,13 @@
       print "<th>turnover</th>"; // 表の見出し turnover
       print "</tr>";　　　　　　 // 表の見出し行の終わり
   
+      while (($row = pg_fetch_array ($result))):
+        print "<tr>";　　　　　　 // 表の明細行の始まり
+        print ’<td>’.$row[0]."</td>";
+        print ’<td>’.$row[1]."</td>";
+        print "</tr>Y=n";　　　　　　 // 表の明細行の終わり
+      endwhile;
+
       $rs = $result->fetchAll ();
       foreach ($rs as $row):
         print "<tr>";　　　　　　 // 表の明細行の始まり
