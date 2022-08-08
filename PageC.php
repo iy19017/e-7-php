@@ -22,6 +22,7 @@
       print "<tr>";　　 // 表の見出し行の始まり
       print "<th>company</th>"; // 表の見出し company
       print "<th>turnover</th>"; // 表の見出し turnover
+      print "<th>data</th>";
       print "</tr>";　　　　　　 // 表の見出し行の終わり
   
 //       while (($row = pg_fetch_array ($result))):
