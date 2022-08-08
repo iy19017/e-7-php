@@ -15,11 +15,25 @@
 
       $connect = new PDO("pgsql:host=$server; dbname=$database; port=$port_number; user=$user_id; password=$user_password");
   
-      $shohin = $_GET['name'];
-    
-      $kingaku = $_GET['money'];
+      $result = &connect -> query(&sql_text);
   
-      print "$shohin $kingaku";
+      print "<h3>データベース検索結果</h3>\=n";
+  
+      print "<table border=1 cellspacing=1 cellpadding=1>\n";
+      print "<tr>";　　 // 表の見出し行の始まり
+      print "<th>company</th>"; // 表の見出し company
+      print "<th>turnover</th>"; // 表の見出し turnover
+      print "</tr>";　　　　　　 // 表の見出し行の終わり
+  
+      $rs = $result->fetchAll ();
+      foreach ($rs as $row):
+        print "<tr>";　　　　　　 // 表の明細行の始まり
+        print ’<td>’.$row[’company’]."</td>";
+        print ’<td>’.$row[’turnover’]."</td>";
+        print "</tr>Y=n";　　　　　　 // 表の明細行の終わり
+      endforeach;
+      print "</table>Y=n";　　　　　　 // 表の終わり
+
   
     ?> 
 
