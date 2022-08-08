@@ -40,6 +40,8 @@
 //         print "</tr>Y=n";　　　　　　 // 表の明細行の終わり
 //       endforeach;
 //       print "</table>Y=n";　　　　　　 // 表の終わり
+  
+      print "</table>;
 
     ?> 
 
