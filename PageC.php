@@ -28,8 +28,9 @@
       $rs = $result->fetchAll ();
       foreach ($rs as $row):
         print "<tr>";　　　　　　 // 表の明細行の始まり
-        print ’<td>’.$row[’company’]."</td>";
-        print ’<td>’.$row[’turnover’]."</td>";
+        print ’<td>’.$row[’商品名’]."</td>";
+        print ’<td>’.$row[’価格’]."</td>";
+        print ’<td>’.$row[’登録日’]."</td>";
         print "</tr>Y=n";　　　　　　 // 表の明細行の終わり
       endforeach;
       print "</table>Y=n";　　　　　　 // 表の終わり
