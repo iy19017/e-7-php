@@ -41,7 +41,7 @@
 //       endforeach;
 //       print "</table>Y=n";　　　　　　 // 表の終わり
   
-      print "</table>;
+      print "</table>";
 
     ?> 
 
