@@ -16,7 +16,7 @@
   
       $sql_text = "select name, value from table01 where turnover > 100000 order byturnover desc";
   
-      $result = &connect -> query(&sql_text);
+      $result = &connect -> query("SELECT * FROM order");
   
 //       print "<h3>データベース検索結果</h3>\=n";
   
@@ -33,15 +33,10 @@
 //         print "</tr>\=n";　　　　　　 // 表の明細行の終わり
 //       endwhile;
 
-//       $rs = $result->fetchAll ();
-//       foreach ($rs as $row):
-//         print "<tr>";　　　　　　 // 表の明細行の始まり
-//         print ’<td>’.$row[’name’]."</td>";
-//         print ’<td>’.$row[’value’]."</td>";
-//         print "</tr>\=n";　　　　　　 // 表の明細行の終わり
-//       endforeach;
-//       print "</table>\=n";　　　　　　 // 表の終わり
-  
+      foreach ($result as $row){
+        ?><?=row["name"]?> : <?=row["value"]?>: <?=row["day"]?><br>
+        <?php
+      }
     ?> 
 
 </html>
