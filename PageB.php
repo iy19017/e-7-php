@@ -19,8 +19,8 @@
       ?>
   <form method "post">
 	  <ul id="select_evaluation">
-		<li><input type="submit" name="select_evaluation_yes" value="よかった"></li>
-		<li><input type="submit" name="select_evaluation_no" value="わるかった"></li>
+		<li><input type="button" name="select_evaluation_yes" value="よかった"></li>
+		<li><input type="button" name="select_evaluation_no" value="わるかった"></li>
 	  </ul>
   </form>
   
