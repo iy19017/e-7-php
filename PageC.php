@@ -34,7 +34,7 @@
 //       endwhile;
   
         foreach ($result as $row){
-             ?><?=row["name"]?> : <?=row["value"]?><br>
+             ?><?=row["item"]?> : <?=row["price"]?><br>
             <?php
          }
     ?> 
