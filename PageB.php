@@ -18,16 +18,15 @@
     	$connect = new PDO("pgsql:host=$server; dbname=$database; port=$port_number;　user=$user_id; password=$user_password");
       ?>
   <form method "post">
-	  <ul id="select_evaluation">
-		<li><input type="button" name="select_evaluation_yes" value="よかった"></li>
-		<li><input type="button" name="select_evaluation_no" value="わるかった"></li>
-	  </ul>
+	<button type="button" name="select_evaluation_yes" value="よかった">
+	<button type="button" name="select_evaluation_no" value="わるかった" href="index.php">
   </form>
   
   <?php	
   if(isset($_POST['select_evaluation_yes'])) {
 	$today = date("Y-m-d");
 	$query = "INSERT INTO users(item,price,day) VALUES('$shohin','$kingaku','$today')";
+	header("location: index.php");
   }
   ?>  
   </body>
