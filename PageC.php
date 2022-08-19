@@ -17,7 +17,7 @@
      $result = $connect->query("SELECT * FROM order");
       foreach($results as $row)
       {
-        ?><?=row["item"]?> : <?=row["price"]?><br>
+        ?><?=row["商品名"]?> : <?=row["価格"]?>: <?=row["登録日"]?><br>
         <?php
       }
   
