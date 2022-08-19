@@ -14,9 +14,9 @@
 
       $connect = new PDO("pgsql:host=$server; dbname=$database; port=$port_number;　user=$user_id; password=$user_password");
   
-      $sql_text = "select company, turnover from table01 where turnover > 100000 order byturnover desc";
+//       $sql_text = "select company, turnover from table01 where turnover > 100000 order byturnover desc";
   
-      $result = &connect -> query(&sql_text);
+//       $result = &connect -> query(&sql_text);
   
       print "<h3>データベース検索結果</h3>\=n";
   
