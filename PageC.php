@@ -33,10 +33,10 @@
 //         print "</tr>\=n";　　　　　　 // 表の明細行の終わり
 //       endwhile;
   
-      foreach ($result as $row){
-//         ?><?=row["name"]?> : <?=row["value"]?>: <?=row["day"]?><br>
-//         <?php
-//       }
+        foreach ($result as $row){
+             ?><?=row["name"]?> : <?=row["value"]?><br>
+            <?php
+         }
     ?> 
 
 </html>
