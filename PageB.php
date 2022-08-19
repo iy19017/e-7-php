@@ -19,6 +19,7 @@
         print "$shohin $kingaku";
 	  
       ?>
+  <br>
   <form method="post">
 	<button type="button" name="select_evaluation_yes" value="よかった">
 	<button type="button" name="select_evaluation_no" value="わるかった" href="index.php">
