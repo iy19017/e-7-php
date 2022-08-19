@@ -33,14 +33,14 @@
         print "</tr>\=n";　　　　　　 // 表の明細行の終わり
       endwhile;
 
-      $rs = $result->fetchAll ();
-      foreach ($rs as $row):
-        print "<tr>";　　　　　　 // 表の明細行の始まり
-        print ’<td>’.$row[’name’]."</td>";
-        print ’<td>’.$row[’value’]."</td>";
-        print "</tr>\=n";　　　　　　 // 表の明細行の終わり
-      endforeach;
-      print "</table>\=n";　　　　　　 // 表の終わり
+//       $rs = $result->fetchAll ();
+//       foreach ($rs as $row):
+//         print "<tr>";　　　　　　 // 表の明細行の始まり
+//         print ’<td>’.$row[’name’]."</td>";
+//         print ’<td>’.$row[’value’]."</td>";
+//         print "</tr>\=n";　　　　　　 // 表の明細行の終わり
+//       endforeach;
+//       print "</table>\=n";　　　　　　 // 表の終わり
   
     ?> 
 
