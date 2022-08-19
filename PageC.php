@@ -6,11 +6,11 @@
     
     <?php
         
-      $server = "ec2-52-48-159-67.eu-west-1.compute.amazonaws.com";
-      $database = "d8bgma6jnt8fbd";
+      $server = "ec2-52-211-232-23.eu-west-1.compute.amazonaws.com";
+      $database = "dao0aqgjli0ekl";
       $port_number = 5432;
-      $user_id = "qcbzuxmlmaijby";
-      $user_password = "bb16bd25fb0ee94746f9270dc541f7e3d8d1c2a9eeeb76b299795c9de6b80aab"; 
+      $user_id = "njtersecjvwybh";
+      $user_password = "b50e46eb2f6767eb9e27889330ef5ec058168f2c0abed5610dd08a2f9c61b694"; 
 
       $connect = new PDO("pgsql:host=$server; dbname=$database; port=$port_number; user=$user_id; password=$user_password");
   
@@ -25,22 +25,22 @@
       print "<th>data</th>";
       print "</tr>";　　　　　　 // 表の見出し行の終わり
   
-//       while (($row = pg_fetch_array ($result))):
-//         print "<tr>";　　　　　　 // 表の明細行の始まり
-//         print ’<td>’.$row[0]."</td>";
-//         print ’<td>’.$row[1]."</td>";
-//         print "</tr>Y=n";　　　　　　 // 表の明細行の終わり
-//       endwhile;
+      while (($row = pg_fetch_array ($result))):
+        print "<tr>";　　　　　　 // 表の明細行の始まり
+        print ’<td>’.$row[0]."</td>";
+        print ’<td>’.$row[1]."</td>";
+        print "</tr>Y=n";　　　　　　 // 表の明細行の終わり
+      endwhile;
 
-//       $rs = $result->fetchAll ();
-//       foreach ($rs as $row):
-//         print "<tr>";　　　　　　 // 表の明細行の始まり
-//         print ’<td>’.$row[’商品名’]."</td>";
-//         print ’<td>’.$row[’価格’]."</td>";
-//         print ’<td>’.$row[’登録日’]."</td>";
-//         print "</tr>Y=n";　　　　　　 // 表の明細行の終わり
-//       endforeach;
-//       print "</table>Y=n";　　　　　　 // 表の終わり
+      $rs = $result->fetchAll ();
+      foreach ($rs as $row):
+        print "<tr>";　　　　　　 // 表の明細行の始まり
+        print ’<td>’.$row[’商品名’]."</td>";
+        print ’<td>’.$row[’価格’]."</td>";
+        print ’<td>’.$row[’登録日’]."</td>";
+        print "</tr>Y=n";　　　　　　 // 表の明細行の終わり
+      endforeach;
+      print "</table>Y=n";　　　　　　 // 表の終わり
   
       print "</table>";
 
