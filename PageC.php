@@ -18,20 +18,20 @@
   
       $result = &connect -> query(&sql_text);
   
-      print "<h3>データベース検索結果</h3>\=n";
+//       print "<h3>データベース検索結果</h3>\=n";
   
-      print "<table border=1 cellspacing=1 cellpadding=1>\n";
-      print "<tr>";　　 // 表の見出し行の始まり
-      print "<th>商品名</th>"; // 表の見出し company
-      print "<th>価格</th>"; // 表の見出し turnover
-      print "</tr>";　　　　　　 // 表の見出し行の終わり
+//       print "<table border=1 cellspacing=1 cellpadding=1>\n";
+//       print "<tr>";　　 // 表の見出し行の始まり
+//       print "<th>商品名</th>"; // 表の見出し company
+//       print "<th>価格</th>"; // 表の見出し turnover
+//       print "</tr>";　　　　　　 // 表の見出し行の終わり
   
-      while (($row = pg_fetch_array ($result))):
-        print "<tr>";　　　　　　 // 表の明細行の始まり
-        print ’<td>’.$row[0]."</td>";
-        print ’<td>’.$row[1]."</td>";
-        print "</tr>\=n";　　　　　　 // 表の明細行の終わり
-      endwhile;
+//       while (($row = pg_fetch_array ($result))):
+//         print "<tr>";　　　　　　 // 表の明細行の始まり
+//         print ’<td>’.$row[0]."</td>";
+//         print ’<td>’.$row[1]."</td>";
+//         print "</tr>\=n";　　　　　　 // 表の明細行の終わり
+//       endwhile;
 
 //       $rs = $result->fetchAll ();
 //       foreach ($rs as $row):
