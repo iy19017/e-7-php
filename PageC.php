@@ -14,9 +14,9 @@
 
       $connect = new PDO("pgsql:host=$server; dbname=$database; port=$port_number;　user=$user_id; password=$user_password");
   
-     $result = $connect->query("SELECT * FROM order");
+      $sql_text = "select company, turnover from table01 where turnover > 100000 order byturnover desc";
   
-//       $result = &connect -> query(&sql_text);
+      $result = &connect -> query(&sql_text);
   
       print "<h3>データベース検索結果</h3>\=n";
   
@@ -36,8 +36,8 @@
       $rs = $result->fetchAll ();
       foreach ($rs as $row):
         print "<tr>";　　　　　　 // 表の明細行の始まり
-        print ’<td>’.$row[’商品名’]."</td>";
-        print ’<td>’.$row[’価格’]."</td>";
+        print ’<td>’.$row[’company’]."</td>";
+        print ’<td>’.$row[’turnover’]."</td>";
         print "</tr>\=n";　　　　　　 // 表の明細行の終わり
       endforeach;
       print "</table>\=n";　　　　　　 // 表の終わり
