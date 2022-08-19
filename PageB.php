@@ -16,10 +16,8 @@
 	  
       ?>
   <br>
-  <form method="post">
-	<button type="button" name="select_evaluation_yes" value="よかった">
-	<button type="button" name="select_evaluation_no" value="わるかった" href="index.php">
-  </form>
+　<button type="button" onclick="click_yes" name="select_evaluation_yes" value="よかった">
+　<button type="button" name="select_evaluation_no" value="わるかった" href="index.php">
   
   <?php	
   if(isset($_POST['select_evaluation_yes'])) {
