@@ -21,7 +21,7 @@
 	$connect = new PDO("pgsql:host=$server; dbname=$database; port=$port_number;　user=$user_id; password=$user_password");
  ?>
 	  
-  <form action ="index.php" method = "POST">
+  <form method = "POST">
 	 <input type="button" onclick="click_yes" name="select_evaluation_yes" value="よかった">
 	 <input type="button" name="select_evaluation_no" value="わるかった" href="index.php">
   </form>
