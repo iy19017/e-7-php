@@ -8,7 +8,8 @@
 	$shohin = $_POST['name'];
 	$kingaku = $_POST['money'];
 	print("$shohin $kingaku");
-	$server = "ec2-52-211-232-23.eu-west-1.compute.amazonaws.com";
+	  
+	$server = "ec2-52-211-232-23.eu-west-1.compute.amazonaws.com:5432";
       　$database = "dao0aqgjli0ekl";
       　$port_number = "5432";
       　$user_id = "njtersecjvwybh";
