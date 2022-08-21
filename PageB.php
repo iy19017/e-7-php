@@ -44,9 +44,9 @@
 	  
   $query = $pdo->prepare('INSERT INTO order(item,price,day) VALUES(:shohin,:kingaku,:today)');
 	  
-  $query->bindValue(':item', $_POST['name'], PDO::PARAM_STR);
+  $query->bindValue(':item', $POST['name'], PDO::PARAM_STR);
 	  
-  $query->bindValue(':price', $_POST['value'], PDO::PARAM_INT);]
+  $query->bindValue(':price', $POST['value'], PDO::PARAM_INT);]
 	  
   $query->bindValue(':day', $today, PDO::PARAM_STR);
    
