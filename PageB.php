@@ -44,7 +44,9 @@
   print("接続");
   
   $today = date("Y-m-d");
-  $query = $pdo->prepare('INSERT INTO(item,price,day) VALUES(:shohin,:kingaku,:today)');	  
+  $query = $pdo->prepare('INSERT INTO(item,price,day) VALUES(:shohin,:kingaku,:today)');
+	  
+  $query->execute();
 	  
   if(isset($_POST['select_evaluation_yes'])) {
 // 	$server = "ec2-52-211-232-23.eu-west-1.compute.amazonaws.com";
