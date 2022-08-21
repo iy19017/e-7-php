@@ -44,7 +44,7 @@
   print("接続");
   
   $today = date("Y-m-d");
-  $query = 'INSERT INTO order(item,price,day) VALUES(:shohin,:kingaku,:today)';
+  $query = "INSERT INTO order(item,price,day) VALUES(:shohin,:kingaku,:today)";
 	  
   $query->execute();
 	  
