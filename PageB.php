@@ -35,6 +35,8 @@
 
 	$stmt = $pdo->prepare($sql);
 		
+	echo "接続完了";
+		
 		try{
 			
 			$stmt -> bindParam(":shohin", $shohin);
@@ -46,6 +48,8 @@
 			$stmt -> execute();
 
 			$pdo -> commit();
+			
+			echo "INSERT完了";
 			
 		}catch(PDOException $e){
 			
@@ -65,7 +69,7 @@
 	  
   else if(isset($_POST['no'])){
 	
-	header("Location: ./index.php") ;
+// 	header("Location: ./index.php") ;
   
   }
   ?>  
