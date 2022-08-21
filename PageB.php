@@ -44,8 +44,8 @@
   $result = pg_query($pdo, $query);
 	  
   if(isset($_POST['select_evaluation_yes'])) {
-	
-	echo ("ON");
+	  
+	echo echo '<script>alert("ようこそのWebの世界へ")</script>';
 	  
 // 	$today = date("Y-m-d");
 // 	$query = 'INSERT INTO(item,price,day) VALUES(:shohin,:kingaku,:today)';
