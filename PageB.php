@@ -49,6 +49,8 @@
 			
 		}catch(PDOException $e){
 			
+			print("INSERT ERROR");
+			
 			throw $e;
 			
 		}
