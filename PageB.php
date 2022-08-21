@@ -38,11 +38,11 @@
 	  
 	$query = $pdo->prepare('INSERT INTO order(item,price,day) VALUES(:shohin,:kingaku,:today)');
 
-	$query->bindValue(':item', $POST['name'], PDO::PARAM_STR);
+	$query->bindParam(':item', $POST['name'], PDO::PARAM_STR);
 
 	$query->bindValue(':price', $POST['value'], PDO::PARAM_INT);]
 
-	$query->bindValue(':day', $today, PDO::PARAM_STR);
+	$query->bindParam(':day', $today, PDO::PARAM_STR);
 
 	$query->execute();
 
