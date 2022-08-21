@@ -67,9 +67,6 @@
 
 	}
 	  
-
-  
- $pdo -> beginTransaction();}
   else if(isset($_POST['no'])){
 	
 	header("Location: ./index.php") ;
