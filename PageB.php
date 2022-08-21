@@ -53,7 +53,7 @@
 
 // 			throw $e;
 			
-	}
+// 	}
 		
 	} catch(PDOException $e){
 
