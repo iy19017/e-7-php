@@ -28,7 +28,7 @@
 	  
 	$today = date("Y-m-d");
 	  
-	$sql = "INSERT INTO "order" (item, price) VALUES (:item, :price)";
+	$sql = "INSERT INTO order (item, price) VALUES (:item, :price)";
 
 	$sth = $pdo -> prepare($sql);
 	  
