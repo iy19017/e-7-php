@@ -26,17 +26,17 @@
 
 	$pdo = new PDO("pgsql:host=$server; dbname=$database; user=$user_id; password=$user_password");
 	  
-	$today = date("Y-m-d");
+// 	$today = date("Y-m-d");
 	  
-	$sql = "INSERT INTO order (item, price) VALUES (:item, :price)";
+// 	$sql = "INSERT INTO order (item, price) VALUES (:item, :price)";
 
-	$sth = $pdo -> prepare($sql);
+// 	$sth = $pdo -> prepare($sql);
 	  
-	$sth -> bindValue(':name', $_POST['name']);
+// 	$sth -> bindValue(':name', $_POST['name']);
 	  
-	$sth -> bindValue(':value', $_POST['money']);
+// 	$sth -> bindValue(':value', $_POST['money']);
 	  
-	$sth -> execute();
+// 	$sth -> execute();
 
   } catch(PDOException $e){
 	  
