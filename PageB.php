@@ -11,9 +11,9 @@
 	  
 	?>
   <br>
-  <form action = "index.php" method = "post">
-	 <input type="button" name="yes" value="よかった">
-	 <input type="button" name="no" value="わるかった">
+  <form action = "index.php" method = "POST">
+	 <input type="submit" name="yes" value="よかった">
+	 <input type="submit" name="no" value="わるかった">
   </form>
   
   <?php
