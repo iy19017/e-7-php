@@ -53,13 +53,15 @@
 
 // 			throw $e;
 			
-// 		}
+// 	}
 		
 	} catch(PDOException $e){
 
 		print("ERROR");
 
 	}
+
+  }
 	  
   else if(isset($_POST['no'])){
 	
