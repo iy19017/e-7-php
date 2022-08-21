@@ -24,7 +24,8 @@
   </form>
   
   <?php
-  try{
+//   try{
+	  
   	$server = "ec2-52-211-232-23.eu-west-1.compute.amazonaws.com";
         $database = "dao0aqgjli0ekl";
         $host = 5432;
@@ -32,10 +33,13 @@
 	$user_password = "b50e46eb2f6767eb9e27889330ef5ec058168f2c0abed5610dd08a2f9c61b694"; 
 
 	$pdo = new PDO("pgsql:host=$server; dbname=$database; user=$user_id; password=$user_password");
+	$pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
   
-  } catch(PDOException $e){
-    print("ERROR");
-  }
+//   } catch(PDOException $e){
+	  
+//     print("ERROR");
+	  
+//   }
   
   $today = date("Y-m-d");
 	  
@@ -45,13 +49,9 @@
 	  
   if(isset($_POST['select_evaluation_yes'])) {
 	  
-	echo echo '<script>alert("ようこそのWebの世界へ")</script>';
-	  
 // 	$today = date("Y-m-d");
 // 	$query = 'INSERT INTO(item,price,day) VALUES(:shohin,:kingaku,:today)';
-	  
-// 	$pdo = null;
-	  
+
   }
   ?>  
   </body>
