@@ -33,7 +33,6 @@
 	$user_password = "b50e46eb2f6767eb9e27889330ef5ec058168f2c0abed5610dd08a2f9c61b694"; 
 
 	$pdo = new PDO("pgsql:host=$server; dbname=$database; user=$user_id; password=$user_password");
-	$pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
   
 //   } catch(PDOException $e){
 	  
@@ -43,10 +42,16 @@
   
   $today = date("Y-m-d");
 	  
-  $query = 'INSERT INTO order(item,price,day) VALUES(:shohin,:kingaku,:today)';
-   
-  $result = pg_query($pdo, $query);
+  $query = $pdo->prepare('INSERT INTO order(item,price,day) VALUES(:shohin,:kingaku,:today)');
 	  
+  $query->bindValue(':item', $_POST['name'], PDO::PARAM_STR);
+	  
+  $query->bindValue(':price', $_POST['value'], PDO::PARAM_INT);]
+	  
+  $query->bindValue(':day', $today, PDO::PARAM_STR);
+   
+  $query->execute();
+	
   if(isset($_POST['select_evaluation_yes'])) {
 	  
 // 	$today = date("Y-m-d");
