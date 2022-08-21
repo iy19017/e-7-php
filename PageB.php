@@ -36,7 +36,7 @@
 	  
 	$today = date("Y-m-d");
 	  
-	$query = $pdo->prepare('INSERT INTO order(item,price,day) VALUES(:shohin,:kingaku,:today)');
+	$query = $pdo->prepare("INSERT INTO order(item,price,day) VALUES(:shohin,:kingaku,:today)");
 
 	$query->bindParam(':item', $POST['name'], PDO::PARAM_STR);
 
