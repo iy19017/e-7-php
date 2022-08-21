@@ -35,31 +35,31 @@
 
 	$stmt = $pdo->prepare($sql);
 		
-		try{
+// 		try{
 			
-			$stmt -> bindParam(":shohin", $shohin);
+// 			$stmt -> bindParam(":shohin", $shohin);
 
-			$stmt -> bindParam(":kingaku", $kingaku);
+// 			$stmt -> bindParam(":kingaku", $kingaku);
 
-			$stmt -> bindParam(":today", $today);
+// 			$stmt -> bindParam(":today", $today);
 
-			$stmt -> execute();
+// 			$stmt -> execute();
 
-			$pdo -> commit();
+// 			$pdo -> commit();
 			
-		}catch(PDOException $e){
+// 		}catch(PDOException $e){
 			
-			print("INSERT ERROR");
+// 			print("INSERT ERROR");
 
-			throw $e;
+// 			throw $e;
 			
-		}
+// 		}
 		
-	} catch(PDOException $e){
+// 	} catch(PDOException $e){
 
-		print("ERROR");
+// 		print("ERROR");
 
-	}
+// 	}
 	  
   else if(isset($_POST['no'])){
 	
