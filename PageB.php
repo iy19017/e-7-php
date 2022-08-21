@@ -5,7 +5,7 @@
   <body>
       <?php
 	$shohin = $_POST['name'];
-	$kingakua = $_POST['money'];
+	$kingaku = $_POST['money'];
 	$today = date("Y-m-d");
 	print("$shohin $kingaku");
 	  
