@@ -31,6 +31,10 @@
 
 	$pdo = new PDO("pgsql:host=$server; dbname=$database; user=$user_id; password=$user_password");
 		
+	$sql = "INSERT INTO order (商品名, 価格, 登録日) VALUES (:shohin, :kingaku, :today)";
+
+	$stmt = $pdo->prepare($sql);
+		
 	} catch(PDOException $e){
 
 	print("ERROR");
@@ -38,11 +42,6 @@
 	}
 	  
 	try{
-		$pdo = new PDO("pgsql:host=$server; dbname=$database; user=$user_id; password=$user_password");
-		
-		$sql = "INSERT INTO order (商品名, 価格, 登録日) VALUES (:shohin, :kingaku, :today)";
-
-		$stmt = $pdo->prepare($sql);
 
 		$stmt -> bindParam(":shohin", $shohin);
 
@@ -66,8 +65,6 @@
   }
   else if(isset($_POST['no'])){
 	
-	echo "PUSH NO";
-	  
 	header("Location: ./index.php") ;
   
   }
