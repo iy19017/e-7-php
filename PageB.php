@@ -4,9 +4,9 @@
 </head>
   <body>
       <?php
-	$shohin = $_POST['name'];
-	$kingaku = $_POST['money'];
-	print("$shohin $kingaku");
+// 	$shohin = $_POST['name'];
+// 	$kingaku = $_POST['money'];
+// 	print("$shohin $kingaku");
 	  
 // 	$server = "ec2-52-211-232-23.eu-west-1.compute.amazonaws.com";
 //         $database = "dao0aqgjli0ekl";
@@ -52,17 +52,17 @@
 	  
   }
   
-  $today = date("Y-m-d");
+//   $today = date("Y-m-d");
 	  
-  $query = $pdo->prepare('INSERT INTO order(item,price,day) VALUES(:shohin,:kingaku,:today)');
+//   $query = $pdo->prepare('INSERT INTO order(item,price,day) VALUES(:shohin,:kingaku,:today)');
 	  
-  $query->bindValue(':item', $POST['name'], PDO::PARAM_STR);
+//   $query->bindValue(':item', $POST['name'], PDO::PARAM_STR);
 	  
-  $query->bindValue(':price', $POST['value'], PDO::PARAM_INT);]
+//   $query->bindValue(':price', $POST['value'], PDO::PARAM_INT);]
 	  
-  $query->bindValue(':day', $today, PDO::PARAM_STR);
+//   $query->bindValue(':day', $today, PDO::PARAM_STR);
    
-  $query->execute();
+//   $query->execute();
 	
 //   if(isset($_POST['select_evaluation_yes'])) {
 	  
