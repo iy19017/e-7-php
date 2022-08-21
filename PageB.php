@@ -31,13 +31,10 @@
 
 	$pdo = new PDO("pgsql:host=$server; dbname=$database; user=$user_id; password=$user_password");
 		
-	$sql = "INSERT INTO order (商品名, 価格, 登録日) VALUES (:shohin, :kingaku, :today)";
-
-	$stmt = $pdo->prepare($sql);
-		
-	echo "接続完了";
-		
 		try{
+			$sql = "INSERT INTO order (商品名, 価格, 登録日) VALUES (:shohin, :kingaku, :today)";
+
+			$stmt = $pdo->prepare($sql);
 			
 			$stmt -> bindParam(":shohin", $shohin);
 
@@ -49,7 +46,6 @@
 
 			$pdo -> commit();
 			
-			echo "INSERT完了";
 			
 		}catch(PDOException $e){
 			
