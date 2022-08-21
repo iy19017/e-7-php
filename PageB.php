@@ -31,27 +31,27 @@
 
 	$pdo = new PDO("pgsql:host=$server; dbname=$database; user=$user_id; password=$user_password");
 		
-		try{
-			$sql = "INSERT INTO order (商品名, 価格, 登録日) VALUES (:shohin, :kingaku, :today)";
+// 		try{
+// 			$sql = "INSERT INTO order (商品名, 価格, 登録日) VALUES (:shohin, :kingaku, :today)";
 
-			$stmt = $pdo->prepare($sql);
+// 			$stmt = $pdo->prepare($sql);
 			
-			$stmt -> bindParam(":shohin", $shohin);
+// 			$stmt -> bindParam(":shohin", $shohin);
 
-			$stmt -> bindParam(":kingaku", $kingaku);
+// 			$stmt -> bindParam(":kingaku", $kingaku);
 
-			$stmt -> bindParam(":today", $today);
+// 			$stmt -> bindParam(":today", $today);
 
-			$stmt -> execute();
+// 			$stmt -> execute();
 
-			$pdo -> commit();
+// 			$pdo -> commit();
 			
 			
-		}catch(PDOException $e){
+// 		}catch(PDOException $e){
 			
-			print("INSERT ERROR");
+// 			print("INSERT ERROR");
 
-			throw $e;
+// 			throw $e;
 			
 	}
 		
