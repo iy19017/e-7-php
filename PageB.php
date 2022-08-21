@@ -11,7 +11,7 @@
 	  
 	?>
   <br>
-  <form action = "index.php" method = "POST">
+  <form  method = "POST">
 	 <input type="submit" name="yes" value="よかった">
 	 <input type="submit" name="no" value="わるかった">
   </form>
@@ -58,6 +58,8 @@
 	$stmt -> bindParam(":today", $today);
 		
 	$stmt -> execute();
+		
+	header("Location: ./index.php") ;
 	  
 	} catch(PDOException $e){
 
@@ -69,6 +71,8 @@
   else if(isset($_POST['no'])){
 	
 	echo "PUSH NO";
+	  
+	header("Location: ./index.php") ;
   
   }
   ?>  
