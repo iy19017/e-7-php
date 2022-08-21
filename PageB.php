@@ -51,7 +51,7 @@
 // 	$pdo = new PDO("pgsql:host=$server; dbname=$database; port=$port_number; user=$user_id; password=$user_password");
 	
 	$today = date("Y-m-d");
-	$query = "INSERT INTO order (item,price,day) VALUES(:shohin,:kingaku,:today)";
+	$query = "INSERT INTO "order" (item,price,day) VALUES(:shohin,:kingaku,:today)";
 	  
 // 	$pdo = null;
   }
