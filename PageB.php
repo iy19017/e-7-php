@@ -11,9 +11,9 @@
 	  
 	?>
   <br>
-  <form method = "POST">
-	 <input type="button" name="select_evaluation_yes" value="よかった">
-	 <input type="button" name="select_evaluation_no" value="わるかった">
+  <form action = "index.php" method = "post">
+	 <input type="button" name="yes" value="よかった">
+	 <input type="button" name="no" value="わるかった">
   </form>
   
   <?php
@@ -33,7 +33,9 @@
 	  
   }
 	
-  if(isset($_POST['select_evaluation_yes'])) {
+  if(isset($_POST['yes'])) {
+	  
+	echo "PUSH YES";  
 	  
 	try{
 	  
@@ -63,6 +65,11 @@
 
 	}
 	  
+  }
+  else if(isset($_POST['no'])){
+	
+	echo "PUSH NO";
+  
   }
   ?>  
   </body>
