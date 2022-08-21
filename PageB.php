@@ -4,8 +4,8 @@
 </head>
   <body>
       <?php
-	$shohin = $_POST['name'];
-	$kingaku = $_POST['money'];
+	$item = $_POST['name'];
+	$price = $_POST['money'];
 	print("$shohin $kingaku");
 	  
 	?>
@@ -28,15 +28,15 @@
 	  
 	$today = date("Y-m-d");
 	  
-	$query = $pdo->prepare("INSERT INTO order (item,price) VALUES(:shohin,:kingaku)");
+	$sql = "INSERT INTO "order" (item, price) VALUES (:item, :price)";
 
-	$query->bindParam(':item', $POST['name'], PDO::PARAM_STR);
-
-	$query->bindValue(':price', $POST['value'], PDO::PARAM_INT);]
-
-	$query->bindParam(':day', $today, PDO::PARAM_STR);
-
-	$query->execute();
+	$sth = $pdo -> prepare($sql);
+	  
+	$sth -> bindValue(':name', $_POST['name']);
+	  
+	$sth -> bindValue(':value', $_POST['money']);
+	  
+	$sth -> execute();
 
   } catch(PDOException $e){
 	  
