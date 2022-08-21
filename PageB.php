@@ -35,8 +35,6 @@
 
 	$stmt = $pdo->prepare($sql);
 		
-	$pdo -> beginTransaction();
-		
 		try{
 			
 			$sql = "INSERT INTO order (商品名, 価格, 登録日) VALUES (:shohin, :kingaku, :today)";
