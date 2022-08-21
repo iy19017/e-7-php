@@ -48,6 +48,8 @@
 	  
   $query->execute();
 	  
+  print("追加");	  
+	  
   if(isset($_POST['select_evaluation_yes'])) {
 // 	$server = "ec2-52-211-232-23.eu-west-1.compute.amazonaws.com";
 //      $database = "dao0aqgjli0ekl";
