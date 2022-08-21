@@ -45,8 +45,8 @@
   
   $today = date("Y-m-d");
   $query = "INSERT INTO order(item,price,day) VALUES(:shohin,:kingaku,:today)";
-	  
-  $query->execute();
+   
+  $result = pg_query($pdo, $query);
 	  
   print("追加");	  
 	  
