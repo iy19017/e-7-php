@@ -34,12 +34,17 @@
 	$pdo = new PDO("pgsql:host=$server; dbname=$database; user=$user_id; password=$user_password");
   
   	print("NNN");
+	  
+	
   
   } catch(PDOException $e){
     print("ERROR");
   }
   
   print("接続");
+  
+  $today = date("Y-m-d");
+  $query = 'INSERT INTO(item,price,day) VALUES(:shohin,:kingaku,:today)';	  
 	  
   if(isset($_POST['select_evaluation_yes'])) {
 // 	$server = "ec2-52-211-232-23.eu-west-1.compute.amazonaws.com";
