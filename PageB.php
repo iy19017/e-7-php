@@ -45,7 +45,7 @@
 	  
   if(isset($_POST['select_evaluation_yes'])) {
 	
-	echo ("");
+	echo ("ON");
 	  
 // 	$today = date("Y-m-d");
 // 	$query = 'INSERT INTO(item,price,day) VALUES(:shohin,:kingaku,:today)';
