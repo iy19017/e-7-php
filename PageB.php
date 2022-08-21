@@ -12,8 +12,8 @@
 	?>
   <br>
   <form  method = "POST">
-	 <input type="button" name="yes" value="よかった">
-	 <input type="button" name="no" value="わるかった">
+	 <input type="submit" name="yes" value="よかった">
+	 <input type="submit" name="no" value="わるかった">
   </form>
   
   <?php
