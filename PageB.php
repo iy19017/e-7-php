@@ -51,21 +51,23 @@
 	  
 	  	print("2");
 
-		$check = $stmt -> execute();
+		$stmt -> execute();
 	  
 	  	print("3");
 	  
-	  	if($check){
+// 	  	if($check){
 			
-			print("成功");
+// 			print("成功");
 			
-		}else{
+// 		}else{
 			
-			print("失敗");
+// 			print("失敗");
 			
-		}
+// 		}
 
-// 			$pdo -> commit();
+		$pdo -> commit();
+	  
+	  	print("4");
 	  
   }
 	  
