@@ -38,21 +38,23 @@
 
 	}
 	  
-	$sql = 'INSERT INTO 'order' (商品名, 価格, 登録日) VALUES (:shohin, :kingaku, :today)';
+// 	$sql = 'INSERT INTO 'order' (商品名, 価格, 登録日) VALUES (:shohin, :kingaku, :today)';
 	  
-	$stmt = $pdo->prepare($sql);
+// 	$stmt = $pdo->prepare($sql);
 	  
-	$stmt->bindParam(':shohin', $shohin);
+// 	$stmt->bindParam(':shohin', $shohin);
 
-	$stmt->bindParam(':kingaku', $kingaku);
+// 	$stmt->bindParam(':kingaku', $kingaku);
 
-	$stmt->bindParam(':today', $today);
+// 	$stmt->bindParam(':today', $today);
 	  
-	print("1");
+// 	print("1");
 
-	$sql->execute();
+// 	$sql->execute();
 	  
-	print("2");
+// 	print("2");
+	  
+	$result = pg_query_params($pdo, $sql, array($shohin, $kakaku, $today);
 	  
 	  
   }
