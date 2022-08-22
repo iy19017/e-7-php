@@ -10,6 +10,9 @@
         <input type = "value" name = "money" value = "" size = "20" maxlength = "20"><br>
         <input type = "submit" value = "送信">
         <input type = "reset" value = "クリア">
+        <br>
+        print "<a href="PageC.php">検索</a>"
+        
       </form>
   </body>
 </html>
