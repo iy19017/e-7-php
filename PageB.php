@@ -18,7 +18,7 @@
   if(isset($_POST['yes'])) {
 	echo "PUSH YES";  
 	
-// 	try{
+	try{
 	  
   	$server = "ec2-54-76-43-89.eu-west-1.compute.amazonaws.com";
         $database = "dcrb5clh0jqmke";
@@ -32,49 +32,34 @@
 	  
 	$pdo->setAttribute(PDO::ATTR_EMULATE_PREPARES, false);
 		
-// 	} catch(PDOException $e){
+	} catch(PDOException $e){
 
-// 		print("ERROR");
+		print("ERROR");
 
-// 	}
+	}
 	  
-	$sql = 'INSERT INTO order (商品名, 価格, 登録日) VALUES (:shohin, :kingaku, :today)';
+	$sql = 'INSERT INTO 'order' (商品名, 価格, 登録日) VALUES (:shohin, :kingaku, :today)';
 	  
-	print("1");
-
 	$stmt = $pdo->prepare($sql);
 	  
-	print("1.1");
-			
 	$stmt->bindParam(':shohin', $shohin);
 
 	$stmt->bindParam(':kingaku', $kingaku);
 
 	$stmt->bindParam(':today', $today);
 	  
-	print("2");
+	print("1");
 
 	$sql->execute();
 	  
-	print("3");
+	print("2");
 	  
-// 	if($check){
-			
-// 		print("成功");
-			
-// 	}else{
-			
-// 		print("失敗");
-			
-// 	}
-
-	print("4");
 	  
   }
 	  
   else if(isset($_POST['no'])){
 	
-// 	header("Location: ./index.php") ;
+	header("Location: ./index.php") ;
   
   }
   ?>  
