@@ -52,11 +52,11 @@
 
 // 	$sql->execute();
 	  
-	print("2");
+	echo "2";
 	  
 // 	$result = pg_query_params($pdo, $sql, array($shohin, $kakaku, $today);
 				  
-	print("3");
+	echo "3";
 	  
 	  
   }
