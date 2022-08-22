@@ -36,11 +36,17 @@
 
 	} catch(PDOException $e){
 
-		print("ERROR");
+		echo "ERROR";
 
 	}
 	  
-	$pdo = new PDO("pgsql:host=$server; dbname=$database; user=$user_id; password=$user_password");	
+// 	$conn = ("pgsql:host=$server; dbname=$database; user=$user_id; password=$user_password");
+	  
+// 	if(!$conn){
+	
+// 		echo "ERROR";
+		
+// 	}
 	
 	$sql = "INSERT INTO \"order\" (商品名, 価格, 登録日) VALUES (':shohin', :kingaku, ':today')";
 	  
@@ -56,7 +62,7 @@
 	  
 	$stmt->execute();
 	  
-	$result = $pdo->query ("INSERT INTO \"order\" (商品名, 価格, 登録日) VALUES ('".&shohin."', '".&kingaku."', '".&today."')");
+	$result = $pdo->query ($sql);
 	  
   }
 	  
