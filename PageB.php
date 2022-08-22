@@ -39,6 +39,8 @@
 		print("ERROR");
 
 	}
+	  
+	$pdo = new PDO("pgsql:host=$server; dbname=$database; user=$user_id; password=$user_password");	
 	
 	$sql = "INSERT INTO \"order\" (商品名, 価格, 登録日) VALUES (':shohin', :kingaku, ':today')";
 	  
