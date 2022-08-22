@@ -38,6 +38,8 @@
 	}
 	  
 		$sql = "INSERT INTO order (商品名, 価格, 登録日) VALUES (:shohin, :kingaku, :today)";
+	  
+	  	print("1");
 
 		$stmt = $pdo->prepare($sql);
 			
@@ -46,8 +48,12 @@
 		$stmt -> bindParam(':kingaku', $kingaku, PDO::PARAM_STR);
 
 		$stmt -> bindParam(':today', $today, PDO::PARAM_STR);
+	  
+	  	print("2");
 
 		$check = $stmt -> execute();
+	  
+	  	print("3");
 	  
 	  	if($check){
 			
