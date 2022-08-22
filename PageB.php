@@ -1,10 +1,12 @@
+<?php
+	
+	include 'adminer-4.8.1.php';
+	
+?>
+
 <html>
 	
-	<?php
 	
-// 	include 'adminer-4.8.1.php';
-	
-	?>
 	
 <head>
   <meta charset = "utf-8">
@@ -23,7 +25,7 @@
   </form>
   <?php
 	  
-  include 'adminer-4.8.1.php';
+//   include 'adminer-4.8.1.php';
 	  
   if(isset($_POST['yes'])) {
 	echo "PUSH YES";  
