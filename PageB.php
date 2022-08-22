@@ -24,7 +24,7 @@
 	  
 		$server = "ec2-54-76-43-89.eu-west-1.compute.amazonaws.com";
 		$database = "dcrb5clh0jqmke";
-		$host = 5432;
+		$host = 54321;
 		$user_id = "owlsbojfhnbkxz";
 		$user_password = "743232ea27dee0cbb00552fac7d502b2f4a0aa4c7763af9193bc9b5d539ab51e"; 
 
