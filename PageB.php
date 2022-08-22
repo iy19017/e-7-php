@@ -34,7 +34,13 @@
 
 	$stmt->bindParam(':today', $today);
 	  
-	$stmt->execute();
+	$call = $stmt->execute();
+	  
+	if(!$call){
+		
+		echo "Error";
+		
+	}
 	  
   }
 	  
