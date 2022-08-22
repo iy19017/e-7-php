@@ -38,7 +38,7 @@
 
 	}
 	  
-// 	$sql = 'INSERT INTO 'order' (商品名, 価格, 登録日) VALUES (:shohin, :kingaku, :today)';
+	$sql = 'INSERT INTO 'order' (商品名, 価格, 登録日) VALUES (:shohin, :kingaku, :today)';
 	  
 // 	$stmt = $pdo->prepare($sql);
 	  
@@ -52,9 +52,11 @@
 
 // 	$sql->execute();
 	  
-// 	print("2");
+	print("2");
 	  
 	$result = pg_query_params($pdo, $sql, array($shohin, $kakaku, $today);
+				  
+	print("3");
 	  
 	  
   }
