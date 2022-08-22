@@ -38,17 +38,17 @@
 
 	}
 	  
-	$sql = 'INSERT INTO order (商品名, 価格, 登録日) VALUES (:shohin, :kingaku, :today)';
+	$sql = 'INSERT INTO order (商品名, 価格, 登録日) VALUES (TEST, 62235253, 2021-10-02)';
 	  
-	echo $sql;
+// 	echo $sql;
 	  
-	$stmt = $pdo->prepare($sql);
+// 	$stmt = $pdo->prepare($sql);
 	  
-	$stmt->bindParam(':shohin', $shohin);
+// 	$stmt->bindParam(':shohin', $shohin);
 
-	$stmt->bindParam(':kingaku', $kingaku);
+// 	$stmt->bindParam(':kingaku', $kingaku);
 
-	$stmt->bindParam(':today', $today);
+// 	$stmt->bindParam(':today', $today);
 	  
 	$sql->execute();
 	  
