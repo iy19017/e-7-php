@@ -42,12 +42,15 @@
 	  	print("1");
 
 		$stmt = $pdo->prepare($sql);
+	  
+	  	print("1.1");
 			
 		$stmt->bindParam(':shohin', $shohin, PDO::PARAM_STR);
 
 		$stmt->bindParam(':kingaku', $kingaku, PDO::PARAM_STR);
 
 		$stmt->bindParam(':today', $today, PDO::PARAM_STR);
+	  
 	  
 	  	print("2");
 
