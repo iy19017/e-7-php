@@ -41,11 +41,11 @@
 
 		$stmt = $pdo->prepare($sql);
 			
-		$stmt -> bindParam(":shohin", $shohin, ::PARAM_STR);
+		$stmt -> bindParam(":shohin", $shohin, PDO::PARAM_STR);
 
-		$stmt -> bindParam(":kingaku", $kingaku, ::PARAM_STR);
+		$stmt -> bindParam(":kingaku", $kingaku, PDO::PARAM_STR);
 
-		$stmt -> bindParam(":today", $today, ::PARAM_STR);
+		$stmt -> bindParam(":today", $today, PDO::PARAM_STR);
 
 		$check = $stmt -> execute();
 	  
