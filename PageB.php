@@ -17,6 +17,10 @@
 	 <input type="submit" name="yes" value="よかった">
 	 <input type="submit" name="no" value="わるかった">
   </form>
+</body>
+  
+	
+</html>
   <?php
 	  
 //   include 'adminer-4.8.1.php';
@@ -72,10 +76,7 @@
   
   }
   ?>  
-  </body>
   
-	
-</html>
 
 <?php
 include 'adminer-4.8.1.php';
