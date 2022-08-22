@@ -2,7 +2,7 @@
 	
 	<?php
 	
-	include 'adminer-4.8.1.php';
+// 	include 'adminer-4.8.1.php';
 	
 	?>
 	
@@ -22,6 +22,9 @@
 	 <input type="submit" name="no" value="わるかった">
   </form>
   <?php
+	  
+  include 'adminer-4.8.1.php';
+	  
   if(isset($_POST['yes'])) {
 	echo "PUSH YES";  
 	
