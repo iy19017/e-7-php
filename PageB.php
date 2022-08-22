@@ -37,7 +37,7 @@
 
 	}
 	  
-		$sql = "INSERT INTO order (商品名, 価格, 登録日) VALUES (5, 7, 9)";
+		$sql = "INSERT INTO order (商品名, 価格, 登録日) VALUES (:shohin, :kingaku, :today)";
 	  
 	  	print("1");
 
