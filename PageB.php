@@ -40,6 +40,8 @@
 	  
 	$sql = 'INSERT INTO order (商品名, 価格, 登録日) VALUES (:shohin, :kingaku, :today)';
 	  
+	echo $sql;
+	  
 	$stmt = $pdo->prepare($sql);
 	  
 	$stmt->bindParam(':shohin', $shohin);
