@@ -3,40 +3,45 @@
   <head>
       <meta charset = "utf-8">
   </head>
+  
+  <body>
+    
+    <form action = "PageD.php" method = "POST">
+        <input type = "text" name = "name" size = "20" maxlength = "20"><br>
+        <input type = "value" name = "money1" size = "20" maxlength = "20">
+        <input type = "value" name = "money2" size = "20" maxlength = "20"><br> 
+        <input type = "submit" value = "送信">
+        <input type = "reset" value = "クリア">
+    </form>
+    
+  </body>
     
     <?php
-        
-      $server = "ec2-52-211-232-23.eu-west-1.compute.amazonaws.com";
-      $database = "dao0aqgjli0ekl";
-      $port_number = 5432;
-      $user_id = "njtersecjvwybh";
-      $user_password = "b50e46eb2f6767eb9e27889330ef5ec058168f2c0abed5610dd08a2f9c61b694"; 
+     
+      try{
+	  
+        $server = "ec2-54-76-43-89.eu-west-1.compute.amazonaws.com";
+        $database = "dcrb5clh0jqmke";
+        $host = 5432;
+        $user_id = "owlsbojfhnbkxz";
+        $user_password = "743232ea27dee0cbb00552fac7d502b2f4a0aa4c7763af9193bc9b5d539ab51e"; 
 
-      $connect = new PDO("pgsql:host=$server; dbname=$database; port=$port_number;　user=$user_id; password=$user_password");
+        $pdo = new PDO("pgsql:host=$server; dbname=$database; user=$user_id; password=$user_password");	
+
+        $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+
+        $pdo->setAttribute(PDO::ATTR_EMULATE_PREPARES, false);
+		
+	    } catch(PDOException $e){
+
+		    print("ERROR");
+
+	    }
   
-      $sql_text = "select name, value from table01 where turnover > 100000 order byturnover desc";
+      $sql = "SELECT * FROM order WHERE 価格 BETWEEN 50000 AND 1000000 ORDER BY 登録日 DESC;";
   
-      $result = &connect -> query("SELECT * FROM order");
+      $pdo -> exec("SELECT * FROM order WHERE 価格 BETWEEN 50000 AND 1000000 ORDER BY 登録日 DESC;"); 
   
-//       print "<h3>データベース検索結果</h3>\=n";
-  
-//       print "<table border=1 cellspacing=1 cellpadding=1>\n";
-//       print "<tr>";　　 // 表の見出し行の始まり
-//       print "<th>商品名</th>"; // 表の見出し company
-//       print "<th>価格</th>"; // 表の見出し turnover
-//       print "</tr>";　　　　　　 // 表の見出し行の終わり
-  
-//       while (($row = pg_fetch_array ($result))):
-//         print "<tr>";　　　　　　 // 表の明細行の始まり
-//         print ’<td>’.$row[0]."</td>";
-//         print ’<td>’.$row[1]."</td>";
-//         print "</tr>\=n";　　　　　　 // 表の明細行の終わり
-//       endwhile;
-  
-        foreach ($result as $row){
-             ?><?=row["item"]?> : <?=row["price"]?><br>
-            <?php
-         }
     ?> 
 
 </html>
