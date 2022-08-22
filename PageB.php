@@ -61,7 +61,7 @@
 	  
 // 	$pdo->beginTransaction();
 
-	$pdo->exec("INSERT INTO order (商品名, 価格, 登録日) VALUES (TEST, 62235253, 2021-10-02"));
+	$pdo->exec($sql);
 	  
 	$pdo->commit();
 	  
