@@ -29,6 +29,8 @@
 	$pdo = new PDO("pgsql:host=$server; dbname=$database; user=$user_id; password=$user_password");	
 	
 	$pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+	  
+	$pdo->setAttribute(PDO::ATTR_EMULATE_PREPARES, false);
 		
 // 	} catch(PDOException $e){
 
@@ -40,7 +42,7 @@
 	  
 	print("1");
 
-	$stmt = $pdo->prepare('INSERT INTO order (商品名, 価格, 登録日) VALUES (:shohin, :kingaku, :today)');
+	$stmt = $pdo->prepare($sql);
 	  
 	print("1.1");
 			
