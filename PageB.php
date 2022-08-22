@@ -53,7 +53,7 @@
 	  
 	  	print("2");
 
-		$stmt->execute();
+		$sql->execute();
 	  
 	  	print("3");
 	  
