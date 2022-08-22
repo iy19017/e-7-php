@@ -12,25 +12,25 @@
 	$today = date('Y-m-d');
 	print("$shohin $kingaku $today");
 	  
-	try{
+// 	try{
 	  
-  	$server = "ec2-54-76-43-89.eu-west-1.compute.amazonaws.com";
-     	$database = "dcrb5clh0jqmke";
-    	$host = 5432;
-	$user_id = "owlsbojfhnbkxz";
-	$user_password = "743232ea27dee0cbb00552fac7d502b2f4a0aa4c7763af9193bc9b5d539ab51e"; 
+//   	$server = "ec2-54-76-43-89.eu-west-1.compute.amazonaws.com";
+//      	$database = "dcrb5clh0jqmke";
+//     	$host = 5432;
+// 	$user_id = "owlsbojfhnbkxz";
+// 	$user_password = "743232ea27dee0cbb00552fac7d502b2f4a0aa4c7763af9193bc9b5d539ab51e"; 
 
-	$pdo = new PDO("pgsql:host=$server; dbname=$database; user=$user_id; password=$user_password");	
+// 	$pdo = new PDO("pgsql:host=$server; dbname=$database; user=$user_id; password=$user_password");	
 	
-	$pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+// 	$pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 	
-	$pdo->setAttribute(PDO::ATTR_EMULATE_PREPARES, false);
+// 	$pdo->setAttribute(PDO::ATTR_EMULATE_PREPARES, false);
 		
-	} catch(PDOException $e){
+// 	} catch(PDOException $e){
 
-		print("ERROR");
+// 		print("ERROR");
 
-	}
+// 	}
 	?>
   <br>
   <form  method = "POST">
@@ -46,9 +46,10 @@
 //   include 'adminer-4.8.1.php';
 	  
   if(isset($_POST['yes'])) {
-	echo "PUSH YES";  
 	
-	$sql = "INSERT INTO 'order' (商品名, 価格, 登録日) VALUES (TEST, 62235253, 2021-10-02)";
+// 	echo "PUSH YES";  
+	
+// 	$sql = "INSERT INTO 'order' (商品名, 価格, 登録日) VALUES (TEST, 62235253, 2021-10-02)";
 	  
 // 	echo $sql;
 	  
@@ -60,13 +61,14 @@
 
 // 	$stmt->bindParam(':today', $today);
 	  
-// 	$sql->execute();
+// 	$stmt->execute();
 	  
-// 	$pdo->beginTransaction();
-
-	$pdo->exec($sql);
+	$conn = pg_connect("pgsql:host=$server; dbname=$database; user=$user_id; password=$user_password");
 	  
-	$pdo->commit();
+	if(!$conn){
+	  echo "ERROR";
+	}
+	
 	  
   }
 	  
@@ -76,8 +78,3 @@
   
   }
   ?>  
-  
-
-<!-- <?php
-include 'adminer-4.8.1.php';
-?> -->
