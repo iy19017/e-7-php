@@ -54,7 +54,7 @@
 	  
 	$pdo->beginTransaction();
 
-	$do->exec("INSERT INTO order (商品名, 価格, 登録日) VALUES (TEST, 62235253, 2021-10-02)");
+	$do = $pdo->exec("INSERT INTO order (商品名, 価格, 登録日) VALUES (TEST, 62235253, 2021-10-02)");
 	  
 	if($do){
 		
