@@ -49,7 +49,7 @@
 
 		$stmt->bindParam(":kingaku", $kingaku, PDO::PARAM_INT);
 
-		$stmt->bindParam(":today", $today, PDO::PARAM_STR);
+		$stmt->bindParam(":today", $today, PDO::PARAM_INT);
 	  
 	  	print("2");
 
