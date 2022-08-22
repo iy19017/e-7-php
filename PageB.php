@@ -44,17 +44,15 @@
 	  
 	$stmt = $pdo->prepare($sql);
 	  
-	echo $stmt;
-	  
 	$stmt->bindParam(':shohin', $shohin);
 
 	$stmt->bindParam(':kingaku', $kingaku);
 
 	$stmt->bindParam(':today', $today);
 	  
-	echo $stmt;
-	  
 	$sql->execute();
+	  
+	
 	  
   }
 	  
