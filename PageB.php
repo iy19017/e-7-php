@@ -51,11 +51,11 @@
 	  
 	  	if($check){
 			
-			echo "成功";
+			print("成功");
 			
 		}else{
 			
-			echo "失敗";
+			print("失敗");
 			
 		}
 
