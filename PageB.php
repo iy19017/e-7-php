@@ -29,38 +29,38 @@
 	$user_id = "owlsbojfhnbkxz";
 	$user_password = "743232ea27dee0cbb00552fac7d502b2f4a0aa4c7763af9193bc9b5d539ab51e"; 
 
-	$pdo = new PDO("pgsql:host=$server; dbname=$database; user=$user_id; password=$user_password");
-		
-// 		try{
-// 			$sql = "INSERT INTO order (商品名, 価格, 登録日) VALUES (:shohin, :kingaku, :today)";
-
-// 			$stmt = $pdo->prepare($sql);
-			
-// 			$stmt -> bindParam(":shohin", $shohin);
-
-// 			$stmt -> bindParam(":kingaku", $kingaku);
-
-// 			$stmt -> bindParam(":today", $today);
-
-// 			$stmt -> execute();
-
-// 			$pdo -> commit();
-			
-			
-// 		}catch(PDOException $e){
-			
-// 			print("INSERT ERROR");
-
-// 			throw $e;
-			
-// 	}
+	$pdo = new PDO("pgsql:host=$server; dbname=$database; user=$user_id; password=$user_password");	
 		
 	} catch(PDOException $e){
 
 		print("ERROR");
 
 	}
+	  
+		$sql = "INSERT INTO order (商品名, 価格, 登録日) VALUES (:shohin, :kingaku, :today)";
 
+		$stmt = $pdo->prepare($sql);
+			
+		$stmt -> bindParam(":shohin", $shohin, ::PARAM_STR);
+
+		$stmt -> bindParam(":kingaku", $kingaku, ::PARAM_STR);
+
+		$stmt -> bindParam(":today", $today, ::PARAM_STR);
+
+		$check = $stmt -> execute();
+	  
+	  	if($check){
+			
+			echo "成功";
+			
+		}else{
+			
+			echo "失敗";
+			
+		}
+
+// 			$pdo -> commit();
+	  
   }
 	  
   else if(isset($_POST['no'])){
