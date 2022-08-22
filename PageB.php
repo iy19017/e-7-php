@@ -43,15 +43,15 @@
 
 		$stmt = $pdo->prepare("INSERT INTO order (商品名, 価格, 登録日) VALUES (:shohin, :kingaku, :today)");
 			
-		$stmt -> bindParam(':shohin', $shohin, PDO::PARAM_STR);
+		$stmt->bindParam(':shohin', $shohin, PDO::PARAM_STR);
 
-		$stmt -> bindParam(':kingaku', $kingaku, PDO::PARAM_STR);
+		$stmt->bindParam(':kingaku', $kingaku, PDO::PARAM_STR);
 
-		$stmt -> bindParam(':today', $today, PDO::PARAM_STR);
+		$stmt->bindParam(':today', $today, PDO::PARAM_STR);
 	  
 	  	print("2");
 
-		$stmt -> execute();
+		$stmt->execute();
 	  
 	  	print("3");
 	  
