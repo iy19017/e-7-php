@@ -11,7 +11,7 @@
         <input type = "submit" value = "送信">
         <input type = "reset" value = "クリア">
         <br>
-        print "<a href="PageC.php">検索</a>"
+        <a href="PageC.php">検索</a>
         
       </form>
   </body>
