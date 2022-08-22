@@ -5,6 +5,8 @@
   </head>
   
   <body>
+	  
+  <?php
     
     try{
 	  
@@ -27,6 +29,8 @@
 		print("ERROR");
 
 	}
+	  
+  ?>
     
   </body>
 </html>
