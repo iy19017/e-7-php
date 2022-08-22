@@ -50,7 +50,10 @@
 
 // 	$stmt->bindParam(':today', $today);
 	  
-	$sql->execute();
+// 	$sql->execute();
+	  
+	  
+	$result = $pdo -> query($sql);
 	  
 	
 	  
