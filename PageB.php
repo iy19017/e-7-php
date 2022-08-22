@@ -45,11 +45,11 @@
 	  
 	  	print("1.1");
 			
-		$stmt->bindParam(':shohin', $shohin);
+		$stmt->bindParam(":shohin", $shohin);
 
-		$stmt->bindParam(':kingaku', $kingaku);
+		$stmt->bindParam(":kingaku", $kingaku);
 
-		$stmt->bindParam(':today', $today);
+		$stmt->bindParam(":today", $today);
 	  
 	  	print("2");
 
