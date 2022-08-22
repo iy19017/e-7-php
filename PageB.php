@@ -56,7 +56,7 @@
 	  
 	$stmt->execute();
 	  
-	$result = $pdo->query ($sql);
+	$result = $pdo->query ("INSERT INTO \"order\" (商品名, 価格, 登録日) VALUES ('" . &shohin . "', '" . &kingaku . "', '" . &today . "')");
 	  
   }
 	  
