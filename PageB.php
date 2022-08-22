@@ -11,26 +11,6 @@
 	$kingaku = $_POST['money'];
 	$today = date('Y-m-d');
 	print("$shohin $kingaku $today");
-	  
-// 	try{
-	  
-//   	$server = "ec2-54-76-43-89.eu-west-1.compute.amazonaws.com";
-//      $database = "dcrb5clh0jqmke";
-//     	$host = 5432;
-// 	$user_id = "owlsbojfhnbkxz";
-// 	$user_password = "743232ea27dee0cbb00552fac7d502b2f4a0aa4c7763af9193bc9b5d539ab51e"; 
-
-// 	$pdo = new PDO("pgsql:host=$server; dbname=$database; user=$user_id; password=$user_password");	
-	
-// 	$pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-	
-// 	$pdo->setAttribute(PDO::ATTR_EMULATE_PREPARES, false);
-		
-// 	} catch(PDOException $e){
-
-// 		print("ERROR");
-
-// 	}
 	?>
   <br>
   <form  method = "POST">
@@ -38,13 +18,8 @@
 	 <input type="submit" name="no" value="わるかった">
   </form>
 </body>
-  
-	
 </html>
   <?php
-	  
-//   include 'adminer-4.8.1.php';
-	  
   if(isset($_POST['yes'])) {
 	
 	$sql = "INSERT INTO order (商品名, 価格, 登録日) VALUES (':shohin', :kingaku, :today)";
