@@ -45,11 +45,11 @@
 	  
 	  	print("1.1");
 			
-		$stmt->bindParam(":shohin", $shohin);
+		$stmt->bindParam(":shohin", $shohin, PDO::PARAM_STR);
 
-		$stmt->bindParam(":kingaku", $kingaku);
+		$stmt->bindParam(":kingaku", $kingaku, PDO::PARAM_INT);
 
-		$stmt->bindParam(":today", $today);
+		$stmt->bindParam(":today", $today, PDO::PARAM_STR);
 	  
 	  	print("2");
 
