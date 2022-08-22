@@ -1,7 +1,4 @@
-<html>
-	
-	
-	
+<html>	
 <head>
   <meta charset = "utf-8">
 </head>
@@ -34,13 +31,7 @@
 
 	$stmt->bindParam(':today', $today);
 	  
-	$call = $stmt->execute();
-	  
-	if(!$call){
-		
-		echo "Error";
-		
-	}
+	$stmt->execute();
 	  
   }
 	  
