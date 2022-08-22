@@ -17,6 +17,9 @@
 </body>
 </html>
   <?php
+
+  include 'adminer-4.8.1.php';
+
   if(isset($_POST['yes'])) {
 	
 	$sql = "INSERT INTO \"order\" (商品名, 価格, 登録日) VALUES (':shohin', :kingaku, ':today')";
