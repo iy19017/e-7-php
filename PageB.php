@@ -47,7 +47,7 @@
 	  
   if(isset($_POST['yes'])) {
 	
-	$sql = "INSERT INTO ¥"order¥" (商品名, 価格, 登録日) VALUES (':shohin', :kingaku, :today)";
+	$sql = "INSERT INTO order (商品名, 価格, 登録日) VALUES (':shohin', :kingaku, :today)";
 	  
 	$stmt = $pdo->prepare($sql);
 	  
