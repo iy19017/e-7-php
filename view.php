@@ -23,10 +23,10 @@
 	If(SearchNameCheck($name)){
 	  
 		session_start();
-
-		$_SESSION['error'] = true;
-
-		header("Location: ./index.php");
+  
+	$_SESSION['error'] = true;
+	  
+	header("Location: ./index.php");
 	  
   	}
 	  
