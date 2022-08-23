@@ -20,6 +20,8 @@
 	  
 	$uplimit = $_POST['uplimit'];
 	  
+	print("$name $downlimit $uplimit");
+	  
 	If(SearchNameCheck($name)){
 	  
 	session_start();
