@@ -70,7 +70,7 @@
 	  
 //  	$stmt = $pdo->prepare($sql);
 	  
-	echo "0";
+// 	echo "0";
 	  
 // 	$stmt = $pdo -> query($sql);
 	  
@@ -80,9 +80,9 @@
 	  
 // 	print("2");
 	  
-	$_SESSION['name'] = $_GET['name'];
+// 	$_SESSION['name'] = $_GET['name'];
 	 
-	$_SESSION['money'] = $_GET['money'];
+// 	$_SESSION['money'] = $_GET['money'];
 	  
 // 	$_SESSION['name'] = $shohin;
 	  
