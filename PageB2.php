@@ -18,7 +18,7 @@
 	 
   <?php
 	
-  print ("商品名：$shohin　価格：$kingaku を登録しました");
+  print ("商品名："$shohin "価格："$kingaku "を登録しました");
 
   ?>
 	  
