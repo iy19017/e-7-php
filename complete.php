@@ -20,9 +20,11 @@
 
   ?>
 	  
-  <form action="index.php">
+  <form action="input.php">
 	 <input type="submit" name="return" value="もどる">
   </form>
+	  
+  <a href="search.php">検索</a>
 	  
 </body>
 </html>
