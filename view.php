@@ -10,8 +10,6 @@
   </form>
   <?php
 	  
-	include './connect.php';
-	  
 	include '/Check.php';
 	  
 	$name = $_POST['name'];
@@ -19,8 +17,6 @@
 	$downlimit = $_POST['downlimit'];
 	  
 	$uplimit = $_POST['uplimit'];
-	  
-	print("$name $downlimit $uplimit");
 	  
 	If(SearchNameCheck($name)){
 
@@ -51,6 +47,8 @@
 		header("Location: ./index.php");
 	  
   	}
+	  
+	include './connect.php';
 	  
 	if(!empty($name)){
 		
