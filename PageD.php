@@ -32,13 +32,20 @@
 	$money1 = $_POST['money1'];
 	$money2 = $_POST['money2'];
 	  
-// 	print("$name $money1 $money2");
-	  
 	$sql = "select * from order order by 価格";
 	  
 	$result = $pdo->query ($sql);
 	  
 	$rs = $result->fetchAll();
+	  
+	foreach ($rs as $row){
+	
+		print "<tr>";
+		print '<td>'.$row['商品名']."</td>";
+		print '<td>'.$row['価格']."</td>";
+		print '<td>'.$row['登録日']."</td>";
+		print "</tr>"
+	}
 	  
 	  
   ?>
