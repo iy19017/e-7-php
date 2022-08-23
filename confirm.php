@@ -15,7 +15,7 @@
 
   $kingaku = $_GET['money'];
 
-  include './connect.php';
+  include './Check.php';
 
   If(InputNameCheck($shohin)){
 	  
