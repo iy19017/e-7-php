@@ -12,9 +12,43 @@
 	  
 	include './connect.php';
 	  
+	include '/Check.php';
+	  
 	$name = $_POST['name'];
-	$money1 = $_POST['money1'];
-	$money2 = $_POST['money2'];
+	
+	$downlimit = $_POST['downlimit'];
+	  
+	$uplimit = $_POST['uplimit'];
+	  
+	If(SearchNameCheck($name)){
+	  
+	session_start();
+  
+	$_SESSION['error'] = true;
+	  
+	header("Location: ./index.php");
+	  
+  	}
+
+  	If(ValueRangeCheck($downlimit)){
+	  
+	session_start();
+  
+  	$_SESSION['error'] = true;
+	  
+	header("Location: ./index.php");
+	  
+  	}
+	  
+	If(ValueRangeCheck($uplimit)){
+	  
+	session_start();
+  
+  	$_SESSION['error'] = true;
+	  
+	header("Location: ./index.php");
+	  
+  	}
 	  
 	if(!empty($name)){
 		
@@ -24,26 +58,26 @@
 	  
 	else if(empty($name)){
 	
-		if(!empty($money1) and !empty($money2)){
+		if(!empty($downlimit) and !empty($uplimit)){
 			
-			$sql = "select * from \"order\" where 価格 between '".$money1."' and '".$money2."' order by 登録日 desc;";
+			$sql = "select * from \"order\" where 価格 between '".$downlimit."' and '".$uplimit."' order by 登録日 desc;";
 		
 		}
 		
-		else if(empty($name) and empty($money1) and empty($money2)){
+		else if(empty($name) and empty($downlimit) and empty($uplimit)){
 		
 			$sql = "select * from \"order\" order by 登録日 desc;";
 		}
 		
-		else if(empty($money1)){
+		else if(empty($downlimit)){
 		
-			$sql = "select * from \"order\" where 価格 < '".$money2."' order by 登録日 desc;";
+			$sql = "select * from \"order\" where 価格 < '".$uplimit."' order by 登録日 desc;";
 		
 		}
 		
-		else if(empty($money2)){
+		else if(empty($uplimit)){
 			
-			$sql = "select * from \"order\" where 価格 > '".$money1."' order by 登録日 desc;";
+			$sql = "select * from \"order\" where 価格 > '".$downlimit."' order by 登録日 desc;";
 			
 		}
 	}
