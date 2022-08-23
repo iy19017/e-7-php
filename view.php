@@ -8,7 +8,11 @@
   <form action = "search.php" method="POST">
   	<input type="submit" name="return" value="もどる">
   </form>
-  <?php
+  
+    
+  </body>
+</html>
+<?php
 	  
 	include '/Check.php';
 	  
@@ -87,6 +91,3 @@
 	print "</table>";
 	  
   ?>
-    
-  </body>
-</html>
