@@ -4,24 +4,6 @@
 </head>
   <body>
       <?php
-// 	try{
-	  
-// 		$server = "ec2-54-76-43-89.eu-west-1.compute.amazonaws.com";
-// 		$database = "dcrb5clh0jqmke";
-// 		$host = 5432;
-// 		$user_id = "owlsbojfhnbkxz";
-// 		$user_password = "743232ea27dee0cbb00552fac7d502b2f4a0aa4c7763af9193bc9b5d539ab51e"; 
-
-// 		$pdo = new PDO("pgsql:host=$server; dbname=$database; user=$user_id; password=$user_password");	
-
-// 		$pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-
-// 	} catch(PDOException $e){
-
-// 		echo "ERROR";
-
-// 	}  
-	
 	$shohin = $_POST['name'];
 	$kingaku = $_POST['money'];
 	$today = date('Y-m-d');
@@ -36,7 +18,7 @@
 </html>
   <?php
 
-//   if(isset($_POST['yes'])) {
+  if(isset($_POST['yes'])) {
 
 	try{
 	  
@@ -49,10 +31,6 @@
 		$pdo = new PDO("pgsql:host=$server; dbname=$database; user=$user_id; password=$user_password");	
 
 		$pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-		
-// 		$sql = "INSERT INTO \"order\" (商品名, 価格, 登録日) VALUES ('".$shohin."', '".$kingaku."', '".data('Y-m-d')."');";
-
-// 		$stmt = $pdo -> query($sql);
 		
 	} catch(PDOException $e){
 
@@ -74,11 +52,17 @@
 	  
 	$stmt = $pdo -> query($sql);
 	  
-//   }
-	  
-//   else if(isset($_POST['no'])){
+	if(!$stmt){
 	
-// 	header("Location: ./index.php") ;
+		echo "ERROR";
+		
+	}
+	  
+  }
+	  
+  else if(isset($_POST['no'])){
+	
+	header("Location: ./index.php") ;
   
-//   }
+  }
   ?>  
