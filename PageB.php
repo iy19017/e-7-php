@@ -11,8 +11,8 @@
 	?>
   <br>
   <form medhod="post">
-	 <input type="button" name="yes" value="よかった">
-	 <input type="button" name="no" value="わるかった">
+	 <input type="submit" name="yes" value="よかった">
+	 <input type="submit" name="no" value="わるかった">
   </form>
 </body>
 </html>
@@ -60,8 +60,8 @@
 		
 	}  
 	  
-	$shohin = $_POST['name'];
-	$kingaku = $_POST['money'];
+	$shohin = $_GET['name'];
+	$kingaku = $_GET['money'];
 	$today = date('Y-m-d');
 	  
 	print("$shohin $kingaku $today");
