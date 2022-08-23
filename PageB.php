@@ -36,7 +36,7 @@
 
 // 		echo "ERROR";
 		
-	}
+// 	}
 
   if(isset($_POST['yes'])) {
 
