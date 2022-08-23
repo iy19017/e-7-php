@@ -88,7 +88,7 @@
 	  
 	$_SESSION['money'] = $kingaku;
 	
-	header("Location: ./PageB2.php") 
+	header("Location: ./PageB2.php"); 
 	  
   }
 	  
