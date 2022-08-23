@@ -12,6 +12,8 @@
 	  
 	include './Check.php';
 	  
+	include './connect.php';
+	  
 	$name = $_POST['name'];
 	  
 	$downlimit = $_POST['downlimit'];
@@ -48,7 +50,6 @@
 	
 	}
 	  
-	include './connect.php';
 	  
 	if(!empty($name)){
 		
