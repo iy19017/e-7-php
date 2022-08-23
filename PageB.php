@@ -40,45 +40,55 @@
 
   if(isset($_POST['yes'])) {
 
-	try{
+// 	try{
 	  
-		$server = "ec2-54-76-43-89.eu-west-1.compute.amazonaws.com";
-		$database = "dcrb5clh0jqmke";
-		$host = 5432;
-		$user_id = "owlsbojfhnbkxz";
-		$user_password = "743232ea27dee0cbb00552fac7d502b2f4a0aa4c7763af9193bc9b5d539ab51e"; 
+// 		$server = "ec2-54-76-43-89.eu-west-1.compute.amazonaws.com";
+// 		$database = "dcrb5clh0jqmke";
+// 		$host = 5432;
+// 		$user_id = "owlsbojfhnbkxz";
+// 		$user_password = "743232ea27dee0cbb00552fac7d502b2f4a0aa4c7763af9193bc9b5d539ab51e"; 
 
-		$pdo = new PDO("pgsql:host=$server; dbname=$database; user=$user_id; password=$user_password");	
+// 		$pdo = new PDO("pgsql:host=$server; dbname=$database; user=$user_id; password=$user_password");	
 
-		$pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+// 		$pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 		
-		echo "OK";
+// 		echo "OK";
 		
-	} catch(PDOException $e){
+// 	} catch(PDOException $e){
 
-		echo "ERROR";
+// 		echo "ERROR";
 		
-	}  
+// 	}  
 	  
-	$shohin = $_GET['name'];
-	$kingaku = $_GET['money'];
-	$today = date('Y-m-d');
+// 	$shohin = $_GET['name'];
+// 	$kingaku = $_GET['money'];
+// 	$today = date('Y-m-d');
 	  
-	print("$shohin $kingaku $today");
+// 	print("$shohin $kingaku $today");
 	
-	$sql = "INSERT INTO \"order\" (商品名, 価格, 登録日) VALUES ('".$_POST['name']."',".$_POST['money'].", '".date('Y-m-d')."');";
+// 	$sql = "INSERT INTO \"order\" (商品名, 価格, 登録日) VALUES ('".$_POST['name']."',".$_POST['money'].", '".date('Y-m-d')."');";
 	  
- 	$stmt = $pdo->prepare($sql);
+//  	$stmt = $pdo->prepare($sql);
 	  
-	echo "0";
+// 	echo "0";
 	  
-	$stmt = $pdo -> query($sql);
+// 	$stmt = $pdo -> query($sql);
 	  
-	echo "1";
+// 	echo "1";
 	  
-	$stmt -> execute();
+// 	$stmt -> execute();
 	  
 // 	print("2");
+	  
+	$shohin = $_GET['name'];
+	 
+	$kingaku = $_GET['money'];
+	  
+	$_SESSION['name'] = $shohin;
+	  
+	$_SESSION['money'] = $kingaku;
+	
+	header("Location: ./PageB2.php") 
 	  
   }
 	  
