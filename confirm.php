@@ -3,12 +3,6 @@
   <meta charset = "utf-8">
 </head>
   <body>
-      <?php
-	$shohin = $_GET['name'];
-	$kingaku = $_GET['money'];
-	$today = date('Y-m-d');
-	?>
-  <br>
   <form method="POST">
 	 <input type="submit" name="yes" value="よかった">
 	 <input type="submit" name="no" value="わるかった">
@@ -17,10 +11,32 @@
 </html>
   <?php
 
+  $shohin = $_GET['name'];
+
+  $kingaku = $_GET['money'];
+
+  include './connect.php';
+
+  session_start();
+
+  If(InputNameCheck($shohin)){
+  
+	$_SESSION['error'] = true;
+	  
+	header('Location: ./index.php');
+	  
+  }
+
+  If(ValueCheck($kingaku)){
+  
+  	$_SESSION['error'] = true;
+	  
+	header('Location: ./index.php');
+	  
+  }
+
   if(isset($_POST['yes'])) {
 
-	session_start();
-	  
 	$shohin = $_GET['name'];
 	 
 	$kingaku = $_GET['money'];
