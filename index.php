@@ -6,9 +6,9 @@
     
   <body>
     
-    <a href="input.php">入力</a>
+    <button onclick="location.href='input.php'">もどる</button>
     
-    <a href="serch.php">検索</a>
+    <button onclick="location.href='search.php'">検索</button>
     
   </body>
 </html>
