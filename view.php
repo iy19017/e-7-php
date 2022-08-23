@@ -98,7 +98,7 @@
 	foreach ($rs as $row):
 	
 		print "<tr>";
-		print '<td align="left" width:auto>'.$row['商品名']."</td>";
+		print '<td align="left">'.$row['商品名']."</td>";
 		print '<td align="right" width:auto>'.$row['価格']."</td>";
 		print '<td align="left" width:auto>'.$row['登録日']."</td>";
 		print "</tr>";
