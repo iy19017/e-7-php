@@ -23,7 +23,7 @@
   
 	$_SESSION['error'] = true;
 	  
-	header('Location: ./index.php');
+	header("Location: ./index.php");
 	  
   }
 
@@ -33,7 +33,7 @@
   
   	$_SESSION['error'] = true;
 	  
-	header('Location: ./index.php');
+	header("Location: ./index.php");
 	  
   }
 
