@@ -12,7 +12,7 @@
 
   function ValueRangeCheck($ItemPrice){
   
-    if(($ItemPrice < 0) or ($ItemPrice > 2147483647)){
+    if(($ItemPrice < 0) or ($ItemPrice > 2147483647) and !empty($name)){
       return TRUE;
     }
     
@@ -32,7 +32,7 @@
 
   function SearchNameCheck($ItemName){
   
-    if((SyntaxCheck($ItemName))){
+    if((SyntaxCheck($ItemName) and !empty($name))){
       return TRUE;
     }
     
