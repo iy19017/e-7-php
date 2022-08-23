@@ -10,7 +10,7 @@
   
     <?php
 	  
-	include '/Check.php';
+	include './Check.php';
 	  
 	$name = $_POST['name'];
 	  
@@ -18,7 +18,7 @@
 	  
 	$uplimit = $_POST['uplimit'];
 	  
-	If(InputNameCheck($name)){
+	If(SearchNameCheck($name)){
 	  
 		session_start();
 
