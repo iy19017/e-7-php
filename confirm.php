@@ -17,9 +17,9 @@
 
   include './connect.php';
 
-  session_start();
-
   If(InputNameCheck($shohin)){
+	  
+	session_start();
   
 	$_SESSION['error'] = true;
 	  
@@ -28,6 +28,8 @@
   }
 
   If(ValueCheck($kingaku)){
+	  
+	session_start();
   
   	$_SESSION['error'] = true;
 	  
@@ -36,6 +38,8 @@
   }
 
   if(isset($_POST['yes'])) {
+	
+	session_start();
 
 	$shohin = $_GET['name'];
 	 
