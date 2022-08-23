@@ -30,13 +30,13 @@
 	$money1 = $_POST['money1'];
 	$money2 = $_POST['money2'];
 	  
-	if(!empty($name)){
+// 	if(!empty($name)){
 		
-		$sql = "select * from \"order\" where 商品名 like '".$name."' order by 登録日 desc;";
+// 		$sql = "select * from \"order\" where 商品名 like '".$name."' order by 登録日 desc;";
 	
-	}
+// 	}
 	  
-	else if(empty($name)){
+	if(empty($name)){
 	
 		if(!empty($money1) and !empty($money2)){
 		
