@@ -20,7 +20,7 @@
 	  
 	$uplimit = $_POST['uplimit'];
 	  
-	If(SearchNameCheck($name) OR ValueRangeCheck($downlimit) OR ValueRangeCheck($uplimit)){
+	If(SearchNameCheck($check) OR ValueRangeCheck($downlimit) OR ValueRangeCheck($uplimit)){
 
 		session_start();
 
