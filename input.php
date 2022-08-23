@@ -10,8 +10,7 @@
         <input type = "number" name = "money" value = "" size = "20" maxlength = "20"><br>
         <input type = "submit" value = "送信">
         <input type = "reset" value = "クリア">
-        <br>
-        <a href="search.php">検索</a>
       </form>
+      <button onclick="location.href='index.php'">もどる</button>
   </body>
 </html>
