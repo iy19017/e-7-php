@@ -22,7 +22,7 @@
 	 
   <br>
 	  
-  <button onclick="location.href='confirm.php'">もどる</button>
+  <button onclick="location.href='input.php'">もどる</button>
 	  
   <button onclick="location.href='search.php'">検索</button>
 	  
