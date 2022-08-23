@@ -1,4 +1,3 @@
-<!DOCTYPE html>
 <html>
   <head>
       <meta charset = "utf-8">
@@ -9,10 +8,7 @@
   	<input type="submit" name="return" value="もどる">
   </form>
   
-    
-  </body>
-</html>
-<?php
+    <?php
 	  
 	include '/Check.php';
 	  
@@ -91,3 +87,6 @@
 	print "</table>";
 	  
   ?>
+	  
+  </body>
+</html>
