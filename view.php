@@ -31,7 +31,7 @@
 
 	}
 		
-	If(!empty($name) and ValueRangeCheck($downlimit)){
+	If(!empty($downlimit) and ValueRangeCheck($downlimit)){
 
 		session_start();
 
@@ -41,7 +41,7 @@
 
 	}
 	  
-	If(!empty($name) and ValueRangeCheck($uplimit)){
+	If(!empty($uplimit) and ValueRangeCheck($uplimit)){
 
 		session_start();
 
