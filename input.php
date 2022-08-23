@@ -5,13 +5,18 @@
   </head>
     
   <body>
-      <form action = "PageB.php" method = "GET">
+      <?php
+    
+        
+    
+      ?>
+      <form action = "confirm.php" method = "GET">
         <input type = "text" name = "name" value = "" size = "20" maxlength = "20"><br>
         <input type = "number" name = "money" value = "" size = "20" maxlength = "20"><br>
         <input type = "submit" value = "送信">
         <input type = "reset" value = "クリア">
         <br>
-        <a href="PageC.php">検索</a>
+        <a href="search.php">検索</a>
         
       </form>
   </body>
