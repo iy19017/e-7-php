@@ -4,6 +4,7 @@
 </head>
   <body>
   <?php
+	session_start();
 	$shohin = $_SESSION['name'];
 	$kingaku = $_SESSION['money'];
 	print("$shohin $kingaku");
