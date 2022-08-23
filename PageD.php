@@ -44,7 +44,7 @@
 		print '<td>'.$row['商品名']."</td>";
 		print '<td>'.$row['価格']."</td>";
 		print '<td>'.$row['登録日']."</td>";
-		print "</tr>"
+		print "</tr>";
 	}
 	  
 	  
