@@ -6,12 +6,14 @@
   
   <body>
     
-    <form action = "PageD.php" method = "POST">
+    <form action = "view.php" method = "POST">
         <input type = "text" name = "name" size = "20" maxlength = "20"><br>
         <input type = "number" name = "money1" size = "20" maxlength = "20">
         <input type = "number" name = "money2" size = "20" maxlength = "20"><br> 
         <input type = "submit" value = "送信">
         <input type = "reset" value = "クリア">
+      　<a href="index.php">もどる</a>
+        <a href="input.php">入力する</a>
     </form>
     
   </body>
