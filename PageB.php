@@ -60,6 +60,10 @@
 		
 // 	}  
 	  
+	$shohin = $_POST['name'];
+	$kingaku = $_POST['money'];
+	$today = date('Y-m-d');
+	  
 	print("$shohin $kingaku $today");
 	
 // 	$sql = "INSERT INTO \"order\" (商品名, 価格, 登録日) VALUES ('".$shohin."',".$kingaku.", '".date('Y-m-d')."');";
