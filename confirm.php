@@ -15,6 +15,8 @@
 
   $kingaku = $_GET['money'];
 
+  print ("商品名：${shohin} 価格：${kingaku} を登録しますか？");
+
   include './Check.php';
 
   If((InputNameCheck($shohin)) or (ValueCheck($kingaku))){
