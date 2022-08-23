@@ -38,11 +38,11 @@
 	  
 // 	print "<table border=1 cellspacing=1 cellpadding=1>"; // 表の開始 (HTML タグ)
 	  
-	print "<tr>";　　 // 表の見出し行の始まり
-	print "<th>商品名</th>"; // 表の見出し company
-	print "<th>価格</th>"; // 表の見出し turnover
-	print "<th>登録日</th>"; // 表の見出し turnover
-	print "</tr>";　　　　　　 // 表の見出し行の終わり
+// 	print "<tr>";　　 // 表の見出し行の始まり
+// 	print "<th>商品名</th>"; // 表の見出し company
+// 	print "<th>価格</th>"; // 表の見出し turnover
+// 	print "<th>登録日</th>"; // 表の見出し turnover
+// 	print "</tr>";　　　　　　 // 表の見出し行の終わり
 	  
 	foreach ($rs as $row):
 	
