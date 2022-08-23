@@ -5,7 +5,7 @@
   </head>
   
   <body>
-  <form action = "PageC.php" method="POST">
+  <form action = "search.php" method="POST">
   	<input type="submit" name="return" value="もどる">
   </form>
   <?php
