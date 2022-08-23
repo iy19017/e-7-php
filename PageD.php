@@ -30,7 +30,13 @@
 	$money1 = $_POST['money1'];
 	$money2 = $_POST['money2'];
 	  
-	$sql = "select * from \"order\" order by 登録日 desc";
+	if(empty($name)){
+	
+		$sql = "select * from \"order\" where 価格 between '".$money1."' and '".$money2."'order by 登録日 desc";
+	
+	}
+	  
+// 	$sql = "select * from \"order\" order by 登録日 desc";
 	  
 	$result = $pdo->query ($sql);
 	  
