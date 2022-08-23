@@ -1,14 +1,3 @@
-<html>	
-<head>
-  <meta charset = "utf-8">
-</head>
-  <body>
-  <form method="POST">
-	 <input type="submit" name="yes" value="登録する">
-	 <input type="submit" name="no" value="取り消し">
-  </form>
-</body>
-</html>
   <?php
 
   $shohin = $_GET['name'];
@@ -51,3 +40,15 @@
   
   }
   ?>  
+<html>	
+<head>
+  <meta charset = "utf-8">
+</head>
+  <body>
+  <form method="POST">
+	 <input type="submit" name="yes" value="登録する">
+	 <input type="submit" name="no" value="取り消し">
+  </form>
+</body>
+</html>
+
