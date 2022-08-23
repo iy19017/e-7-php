@@ -5,14 +5,12 @@
   </head>
   
   <body>
-	  
+  <form actino = "PageC.php" method="POST">
+  	<input type="submit" name="return" value="もどる">
+  </form>
   <?php
 	  
 	include './connect.php';
-	  
-	<form actino = "PageC.php" method="POST">
-		<input type="submit" name="return" value="もどる">
-  	</form>
 	  
 	$name = $_POST['name'];
 	$money1 = $_POST['money1'];
