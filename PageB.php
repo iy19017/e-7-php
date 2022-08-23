@@ -10,7 +10,7 @@
 // 	print("$shohin $kingaku $today");
 	?>
   <br>
-  <form medhod="post">
+  <form medhod="POST">
 	 <input type="submit" name="yes" value="よかった">
 	 <input type="submit" name="no" value="わるかった">
   </form>
