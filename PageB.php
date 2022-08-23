@@ -4,10 +4,10 @@
 </head>
   <body>
       <?php
-	$shohin = $_GET['name'];
-	$kingaku = $_GET['money'];
-	$today = date('Y-m-d');
-	print("$shohin $kingaku $today");
+// 	$shohin = $_GET['name'];
+// 	$kingaku = $_GET['money'];
+// 	$today = date('Y-m-d');
+// 	print("$shohin $kingaku $today");
 	?>
   <br>
   <form medhod="post">
@@ -92,9 +92,9 @@
 	  
   }
 	  
-//   else if(isset($_POST['no'])){
+  else if(isset($_POST['no'])){
 	
-// 	header("Location: ./index.php") ;
+	header("Location: ./index.php") ;
   
-//   }
+  }
   ?>  
