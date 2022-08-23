@@ -7,7 +7,9 @@
 	
 	$sql = "INSERT INTO \"order\" (商品名, 価格, 登録日) VALUES ('".$shohin."',".$kingaku.", '".date('Y-m-d')."');";
 	  
-	$stmt = $pdo -> query($sql);	
+	$stmt = $pdo -> query($sql);
+
+	print ("商品名：${shohin} 価格：${kingaku} を登録しました");
 
 ?>
 <html>	
@@ -18,7 +20,7 @@
 	 
   <?php
 	
-  print ("商品名：${shohin} 価格：${kingaku} を登録しました");
+//   print ("商品名：${shohin} 価格：${kingaku} を登録しました");
 
   ?>
 	  
