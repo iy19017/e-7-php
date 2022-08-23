@@ -38,7 +38,7 @@
 
   if(isset($_POST['yes'])) {
 	  
-// 	try{
+	try{
 	  
 		$server = "ec2-54-76-43-89.eu-west-1.compute.amazonaws.com";
 		$database = "dcrb5clh0jqmke";
@@ -49,12 +49,16 @@
 		$pdo = new PDO("pgsql:host=$server; dbname=$database; user=$user_id; password=$user_password");	
 
 // 		$pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+		
+		$sql = "INSERT INTO \"order\" (商品名, 価格, 登録日) VALUES ('".$shohin."', '".$kingaku."', '".data('Y-m-d')."');";
 
-// 	} catch(PDOException $e){
+		$stmt = $pdo -> query($sql);
+		
+	} catch(PDOException $e){
 
-// 		echo "ERROR";
-
-// 	}  
+		echo "ERROR";
+		
+	}  
 	  
 	
 	$sql = "INSERT INTO \"order\" (商品名, 価格, 登録日) VALUES ('".$shohin."', '".$kingaku."', '".data('Y-m-d')."');";
