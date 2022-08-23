@@ -30,6 +30,13 @@
 	$money1 = $_POST['money1'];
 	$money2 = $_POST['money2'];
 	  
+	if($money1 < 0 OR $money2 < 0){
+	
+		echo "ERROR";
+		
+	}  
+	
+	  
 	if(!empty($name)){
 		
 		$sql = "select * from \"order\" where 商品名 like '".$name."' order by 登録日 desc;";
