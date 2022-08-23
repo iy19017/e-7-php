@@ -36,7 +36,7 @@
 	  
 	$rs = $result->fetchAll();
 	  
-// 	print "<table border=1 cellspacing=1 cellpadding=1>"; // 表の開始 (HTML タグ)
+	print "<table border=1 cellspacing=1 cellpadding=1>";
 	  
 	print "<tr>";
 	print "<th>商品名</th>";
@@ -54,7 +54,7 @@
 	
 	endforeach;
 	
-// 	print "</table>";
+	print "</table>";
 	  
   ?>
     
