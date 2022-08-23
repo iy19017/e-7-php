@@ -14,21 +14,19 @@
 	  
 	$name = $_POST['name'];
 	  
-	$check = $name;
-	
 	$downlimit = $_POST['downlimit'];
 	  
 	$uplimit = $_POST['uplimit'];
 	  
-	If(SearchNameCheck($check) OR ValueRangeCheck($downlimit) OR ValueRangeCheck($uplimit)){
+// 	If(SearchNameCheck($name) OR ValueRangeCheck($downlimit) OR ValueRangeCheck($uplimit)){
 
-		session_start();
+// 		session_start();
 
-		$_SESSION['error'] = true;
+// 		$_SESSION['error'] = true;
 
-		header("Location: ./index.php");
+// 		header("Location: ./index.php");
 	  
-  	}
+//   	}
 	  
 	include './connect.php';
 	  
