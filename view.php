@@ -28,9 +28,23 @@
 	  
   	}
 	  
-	If((ValueRangeCheck($downlimit)) or (ValueRangeCheck($uplimit))){
+	If(ValueRangeCheck($downlimit)){
 	
+		session_start();
+
+		$_SESSION['error'] = true;
+
+		header("Location: ./index.php");
 	
+	}
+	  
+	If(ValueRangeCheck($uplimit)){
+	
+		session_start();
+
+		$_SESSION['error'] = true;
+
+		header("Location: ./index.php");
 	
 	}
 	  
