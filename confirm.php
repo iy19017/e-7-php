@@ -29,13 +29,13 @@
 	  
 	$_SESSION['money'] = $kingaku;
 	
-	header("Location: ./PageB2.php"); 
+	header("Location: ./complete.php"); 
 	  
   }
 	  
   else if(isset($_POST['no'])){
 	
-	header("Location: ./index.php") ;
+	header("Location: ./input.php") ;
   
   }
   ?>  
