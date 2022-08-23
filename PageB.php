@@ -38,8 +38,6 @@
 
 //   if(isset($_POST['yes'])) {
 
-	require_once "adminer-4.8.1.php";
-	  
 	try{
 	  
 		$server = "ec2-54-76-43-89.eu-west-1.compute.amazonaws.com";
@@ -52,9 +50,9 @@
 
 // 		$pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 		
-		$sql = "INSERT INTO \"order\" (商品名, 価格, 登録日) VALUES ('".$shohin."', '".$kingaku."', '".data('Y-m-d')."');";
+// 		$sql = "INSERT INTO \"order\" (商品名, 価格, 登録日) VALUES ('".$shohin."', '".$kingaku."', '".data('Y-m-d')."');";
 
-		$stmt = $pdo -> query($sql);
+// 		$stmt = $pdo -> query($sql);
 		
 	} catch(PDOException $e){
 
@@ -63,17 +61,17 @@
 	}  
 	  
 	
-// 	$sql = "INSERT INTO \"order\" (商品名, 価格, 登録日) VALUES ('".$shohin."', '".$kingaku."', '".data('Y-m-d')."');";
+	$sql = "INSERT INTO \"order\" (商品名, 価格, 登録日) VALUES (':shohin', ':kingaku', ':today');";
 	  
-//  	$stmt = $pdo->prepare($sql);
+ 	$stmt = $pdo->prepare($sql);
 	  
-//  	$stmt->bindParam(':shohin', $shohin;
+ 	$stmt->bindParam(':shohin', $shohin;
 
-//  	$stmt->bindParam(':kingaku', $kingaku);
+ 	$stmt->bindParam(':kingaku', $kingaku);
 
-// 	$stmt->bindParam(':today', $today);
+	$stmt->bindParam(':today', $today);
 	  
-// 	$stmt = $pdo -> query($sql);
+	$stmt = $pdo -> query($sql);
 	  
 //   }
 	  
