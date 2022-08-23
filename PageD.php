@@ -8,34 +8,15 @@
 	  
   <?php
 	  
-	try{
+	include './connect.php';
 	  
-	$server = "ec2-54-76-43-89.eu-west-1.compute.amazonaws.com";
-	$database = "dcrb5clh0jqmke";
-	$host = 5432;
-	$user_id = "owlsbojfhnbkxz";
-	$user_password = "743232ea27dee0cbb00552fac7d502b2f4a0aa4c7763af9193bc9b5d539ab51e"; 
-
-	$pdo = new PDO("pgsql:host=$server; dbname=$database; user=$user_id; password=$user_password");	
-
-	$pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-
-	} catch(PDOException $e){
-
-	echo "ERROR";
-
-	}
+	<form actino = "PageC.php" method="POST">
+		<input type="submit" name="return" value="もどる">
+  	</form>
 	  
 	$name = $_POST['name'];
 	$money1 = $_POST['money1'];
 	$money2 = $_POST['money2'];
-	  
-	if($money1 < 0 OR $money2 < 0){
-	
-		echo "ERROR";
-		
-	}  
-	
 	  
 	if(!empty($name)){
 		
@@ -47,22 +28,16 @@
 	
 		if(!empty($money1) and !empty($money2)){
 			
-			echo "範囲";
-		
 			$sql = "select * from \"order\" where 価格 between '".$money1."' and '".$money2."' order by 登録日 desc;";
 		
 		}
 		
 		else if(empty($name) and empty($money1) and empty($money2)){
 		
-			echo "カラ";
-			
 			$sql = "select * from \"order\" order by 登録日 desc;";
 		}
 		
 		else if(empty($money1)){
-			
-			echo "上限";
 		
 			$sql = "select * from \"order\" where 価格 < '".$money2."' order by 登録日 desc;";
 		
@@ -70,8 +45,6 @@
 		
 		else if(empty($money2)){
 			
-			echo "下限";
-		
 			$sql = "select * from \"order\" where 価格 > '".$money1."' order by 登録日 desc;";
 			
 		}
