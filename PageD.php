@@ -39,24 +39,32 @@
 	if(empty($name)){
 	
 		if(!empty($money1) and !empty($money2)){
+			
+			echo "範囲";
 		
 			$sql = "select * from \"order\" where 価格 between $money1 and $money2 order by 登録日 desc;";
 		
 		}
 		
 		else if(empty($money1)){
+			
+			echo "上限";
 		
 			$sql = "select * from \"order\" where 価格 < '".$money2."' order by 登録日 desc;";
 		
 		}
 		
 		else if(empty($money2)){
+			
+			echo "下限";
 		
 			$sql = "select * from \"order\" where 価格 > '".$money1."' order by 登録日 desc;";
 			
 		}
 		
 		else if(empty($name) and empty($money1) and empty($money2)){
+		
+			echo "カラ";
 			
 			$sql = "select * from \"order\" order by 登録日 desc;";
 		}
