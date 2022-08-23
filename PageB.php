@@ -70,12 +70,6 @@
 	  
  	$stmt = $pdo->prepare($sql);
 	  
- 	$stmt->bindParam(':shohin', $shohin);
-
- 	$stmt->bindParam(':kingaku', $kingaku);
-
-	$stmt->bindParam(':today', $today);
-	  
 	echo "0";
 	  
 	$stmt = $pdo -> query($sql);
