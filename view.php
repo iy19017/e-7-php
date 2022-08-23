@@ -18,27 +18,7 @@
 	  
 	$uplimit = $_POST['uplimit'];
 	  
-	If(SearchNameCheck($name)){
-
-		session_start();
-
-		$_SESSION['error'] = true;
-
-		header("Location: ./index.php");
-	  
-  	}
-
-  	If(ValueRangeCheck($downlimit)){
-
-		session_start();
-
-		$_SESSION['error'] = true;
-
-		header("Location: ./index.php");
-	  
-  	}
-	  
-	If(ValueRangeCheck($uplimit)){
+	If(SearchNameCheck($name) OR ValueRangeCheck($downlimit) OR ValueRangeCheck($uplimit)){
 
 		session_start();
 
