@@ -64,7 +64,7 @@
 	  
 	if(!empty($name)){
 		
-		$sql = "select * from \"order\" where 商品名 like '".$name."' order by 登録日 desc;";
+		$sql = "select * from \"order\" where 商品名 like '%".$name."%' order by 登録日 desc;";
 	
 	}
 	  
