@@ -74,11 +74,11 @@
 	  
 	$stmt = $pdo -> query($sql);
 	  
-	if(!$stmt){
-	
-		echo "ERROR";
-		
-	}
+	echo "1";
+	  
+	$stmt -> execute();
+	  
+	echo "2";
 	  
   }
 	  
