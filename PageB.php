@@ -66,7 +66,7 @@
 	  
  	$stmt = $pdo->prepare($sql);
 	  
- 	$stmt->bindParam(':shohin', $shohin;
+ 	$stmt->bindParam(':shohin', $shohin);
 
  	$stmt->bindParam(':kingaku', $kingaku);
 
