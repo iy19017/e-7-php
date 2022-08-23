@@ -15,6 +15,8 @@
     
       print("不正な入力");
       
+      $_SESSION['error'] = false;
+      
     }
     
     ?>
