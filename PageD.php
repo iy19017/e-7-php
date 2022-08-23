@@ -36,16 +36,15 @@
 	
 	}
 	  
-	else if(empty($name)){
-	
-		$sql = "select * from \"order\" where 価格 between '".$money1."' and '".$money2."' order by 登録日 desc";
+	else if(!empty($name)){
+		
+		$sql = "select * from \"order\" where 商品名 like '".$name."' order by 登録日 desc";
 	
 	}
 	  
-	else if(!empty($name)){
+	else if(empty($name)){
 	
-		$sql = "select * from \"order\" where 商品名 like '".$name."' order by 登録日 desc";
-	
+		$sql = "select * from \"order\" where 価格 between '".$money1."' and '".$money2."' order by 登録日 desc";
 	}
 	  
 	$result = $pdo->query ($sql);
