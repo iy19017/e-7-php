@@ -72,15 +72,15 @@
 
 // 	$stmt->bindParam(':today', $today);
 	  
-	echo "0";
+	print("0");
 	  
 	$stmt = $pdo -> query($sql);
 	  
-	echo "1";
+	print("1");
 	  
 	$stmt -> execute();
 	  
-	echo "2";
+	print("2");
 	  
   }
 	  
