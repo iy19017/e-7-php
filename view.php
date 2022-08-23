@@ -13,6 +13,8 @@
 	include '/Check.php';
 	  
 	$name = $_POST['name'];
+	  
+	$check = $name;
 	
 	$downlimit = $_POST['downlimit'];
 	  
