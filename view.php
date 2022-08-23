@@ -28,6 +28,26 @@
 	  
   	}
 	  
+	If(ValueRangeCheck($downlimit)){
+	
+		session_start();
+
+		$_SESSION['error'] = true;
+
+		header("Location: ./index.php");
+	
+	}
+	  
+	If(ValueRangeCheck($uplimit)){
+	
+		session_start();
+
+		$_SESSION['error'] = true;
+
+		header("Location: ./index.php");
+	
+	}
+	  
 	include './connect.php';
 	  
 	if(!empty($name)){
