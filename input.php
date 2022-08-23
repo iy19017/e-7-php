@@ -5,11 +5,6 @@
   </head>
     
   <body>
-      <?php
-    
-        
-    
-      ?>
       <form action = "confirm.php" method = "GET">
         <input type = "text" name = "name" value = "" size = "20" maxlength = "20"><br>
         <input type = "number" name = "money" value = "" size = "20" maxlength = "20"><br>
@@ -17,7 +12,6 @@
         <input type = "reset" value = "クリア">
         <br>
         <a href="search.php">検索</a>
-        
       </form>
   </body>
 </html>
