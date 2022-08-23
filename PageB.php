@@ -72,6 +72,8 @@
 
 // 	$stmt->bindParam(':today', $today);
 	  
+	echo "0";
+	  
 	$stmt = $pdo -> query($sql);
 	  
 	echo "1";
