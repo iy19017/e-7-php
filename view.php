@@ -18,7 +18,7 @@
 	  
 	$uplimit = $_POST['uplimit'];
 	  
-	If(InputNameCheck($shohin)){
+	If(InputNameCheck($name)){
 	  
 		session_start();
 
