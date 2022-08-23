@@ -38,7 +38,7 @@
 		
 	}
 
-//   if(isset($_POST['yes'])) {
+  if(isset($_POST['yes'])) {
 
 // 	try{
 	  
@@ -83,7 +83,7 @@
 	  
 // 	print("2");
 	  
-//   }
+  }
 	  
 //   else if(isset($_POST['no'])){
 	
