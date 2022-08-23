@@ -21,10 +21,6 @@
   if(isset($_POST['yes'])) {
 	
 	session_start();
-
-	$shohin = $_GET['name'];
-	 
-	$kingaku = $_GET['money'];
 	  
 	$_SESSION['name'] = $shohin;
 	  
