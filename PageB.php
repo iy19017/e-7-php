@@ -66,15 +66,15 @@
 	  
 	print("$shohin $kingaku $today");
 	
-	$sql = "INSERT INTO \"order\" (商品名, 価格, 登録日) VALUES ('".$shohin."',".$kingaku.", '".date('Y-m-d')."');";
+	$sql = "INSERT INTO \"order\" (商品名, 価格, 登録日) VALUES ('".$_POST['name']."',".$_POST['money'].", '".date('Y-m-d')."');";
 	  
-//  	$stmt = $pdo->prepare($sql);
+ 	$stmt = $pdo->prepare($sql);
 	  
-//  	$stmt->bindParam(':shohin', $shohin);
+ 	$stmt->bindParam(':shohin', $shohin);
 
-//  	$stmt->bindParam(':kingaku', $kingaku);
+ 	$stmt->bindParam(':kingaku', $kingaku);
 
-// 	$stmt->bindParam(':today', $today);
+	$stmt->bindParam(':today', $today);
 	  
 	echo "0";
 	  
