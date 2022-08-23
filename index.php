@@ -6,7 +6,7 @@
     
   <body>
     
-    <button onclick="location.href='input.php'">もどる</button>
+    <button onclick="location.href='input.php'">入力</button>
     
     <button onclick="location.href='search.php'">検索</button>
     
