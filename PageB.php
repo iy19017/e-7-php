@@ -10,7 +10,7 @@
 // 	print("$shohin $kingaku $today");
 	?>
   <br>
-  <form medhod="POST">
+  <form method="POST">
 	 <input type="submit" name="yes" value="よかった">
 	 <input type="submit" name="no" value="わるかった">
   </form>
@@ -80,9 +80,9 @@
 	  
 // 	print("2");
 	  
-// 	$_SESSION['name'] = $_GET['name'];
+	$_SESSION['name'] = $_GET['name'];
 	 
-// 	$_SESSION['money'] = $_GET['money'];
+	$_SESSION['money'] = $_GET['money'];
 	  
 // 	$_SESSION['name'] = $shohin;
 	  
