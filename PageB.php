@@ -39,17 +39,17 @@
   if(isset($_POST['yes'])) {
 	  
 	
-	$sql = "INSERT INTO \"order\" (商品名, 価格, 登録日) VALUES (':shohin', :kingaku, ':today')";
+	$sql = "INSERT INTO \"order\" (商品名, 価格, 登録日) VALUES ('".$shohin."', '".$kingaku."', '".data('Y-m-d')."');";
 	  
-	$stmt = $pdo->prepare($sql);
+//  	$stmt = $pdo->prepare($sql);
 	  
-	$stmt->bindParam(':shohin', $shohin, PDO::PARAM_STR);
+//  	$stmt->bindParam(':shohin', $shohin;
 
-	$stmt->bindParam(':kingaku', $kingaku, PDO::PARAM_INT);
+//  	$stmt->bindParam(':kingaku', $kingaku);
 
-	$stmt->bindParam(':today', $today, PDO::PARAM_STR);
+// 	$stmt->bindParam(':today', $today);
 	  
-	$stmt->execute();
+	$stmt = $pdo -> query($sql);
 	  
   }
 	  
