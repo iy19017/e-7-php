@@ -21,29 +21,27 @@
 	$uplimit = $_POST['uplimit'];
 	  
 	  
-// 		If(SearchNameCheck($name)){
+	If((!empty($name)) and (SearchNameCheck($name))){
 			
-// 		session_start();
+		session_start();
 
-// 		$_SESSION['error'] = true;
+		$_SESSION['error'] = true;
 
-// 		header("Location: ./index.php");
+		header("Location: ./index.php");
 
-// 		}
+	}
 		
+	If((!empty($name) and (ValueRangeCheck($downlimit))){
+
+		session_start();
+
+		$_SESSION['error'] = true;
+
+		header("Location: ./index.php");
+
+	}
 	  
-	  
-		If(ValueRangeCheck($downlimit)){
-
-			session_start();
-
-			$_SESSION['error'] = true;
-
-			header("Location: ./index.php");
-
-		}
-	  
-		If(ValueRangeCheck($uplimit)){
+		If(!empty($name) and (ValueRangeCheck($uplimit))){
 
 			session_start();
 
