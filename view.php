@@ -21,7 +21,7 @@
 	$uplimit = $_POST['uplimit'];
 	  
 	  
-	If(!empty($name) and SearchNameCheck($name)){
+	If(SearchNameCheck($name)){
 			
 		session_start();
 
@@ -31,7 +31,7 @@
 
 	}
 		
-	If(!empty($downlimit) and ValueRangeCheck($downlimit)){
+	If(ValueRangeCheck($downlimit)){
 
 		session_start();
 
@@ -41,7 +41,7 @@
 
 	}
 	  
-	If(!empty($uplimit) and ValueRangeCheck($uplimit)){
+	If(ValueRangeCheck($uplimit)){
 
 		session_start();
 
