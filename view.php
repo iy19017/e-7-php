@@ -20,7 +20,6 @@
 	  
 	$uplimit = $_POST['uplimit'];
 	  
-	If(!empty($name)){
 	  
 		If(SearchNameCheck($name)){
 
@@ -32,9 +31,7 @@
 
 		}
 		
-	}
 	  
-	If(!empty($downlist)){
 	  
 		If(ValueRangeCheck($downlimit)){
 
@@ -45,10 +42,6 @@
 			header("Location: ./index.php");
 
 		}
-	
-	}
-	  
-	If(!empty($uplist)){
 	  
 		If(ValueRangeCheck($uplimit)){
 
@@ -59,8 +52,6 @@
 			header("Location: ./index.php");
 
 		}
-	  
-	}
 	  
 	if(!empty($name)){
 		
