@@ -11,7 +11,6 @@
         <input type = "submit" value = "送信">
         <input type = "reset" value = "クリア">
       </form>
-      <br>
       <button onclick="location.href='index.php'">もどる</button>
   </body>
 </html>
