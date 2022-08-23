@@ -2,11 +2,11 @@
 
 try{
 	  
-  $server = "ec2-54-76-43-89.eu-west-1.compute.amazonaws.com";
-  $database = "dcrb5clh0jqmke";
+  $server = "ec2-52-208-164-5.eu-west-1.compute.amazonaws.com";
+  $database = "df54o5fg47hvkg";
   $host = 5432;
-  $user_id = "owlsbojfhnbkxz";
-  $user_password = "743232ea27dee0cbb00552fac7d502b2f4a0aa4c7763af9193bc9b5d539ab51e"; 
+  $user_id = "tyrrmbizzzoikk";
+  $user_password = "c7720728cad33d5baf78911c4bb606668bfebc1f2c78a6310b85543b05936bb4"; 
 
   $pdo = new PDO("pgsql:host=$server; dbname=$database; user=$user_id; password=$user_password");	
 
