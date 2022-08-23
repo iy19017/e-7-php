@@ -17,21 +17,11 @@
 
   include './Check.php';
 
-  If(InputNameCheck($shohin)){
+  If((InputNameCheck($shohin)) or (ValueCheck($kingaku))){
 	  
 	session_start();
   
 	$_SESSION['error'] = true;
-	  
-	header("Location: ./index.php");
-	  
-  }
-
-  If(ValueCheck($kingaku)){
-	  
-	session_start();
-  
-  	$_SESSION['error'] = true;
 	  
 	header("Location: ./index.php");
 	  
