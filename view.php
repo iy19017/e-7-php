@@ -18,7 +18,7 @@
 	  
 	$uplimit = $_POST['uplimit'];
 	  
-	If(SearchNameCheck($name)){
+	If((SearchNameCheck($name)) or (ValueRangeCheck($downlimit)) or (ValueRangeCheck($uplimit))){
 	  
 		session_start();
 
@@ -27,26 +27,6 @@
 		header("Location: ./index.php");
 	  
   	}
-	  
-	If(ValueRangeCheck($downlimit)){
-	
-		session_start();
-
-		$_SESSION['error'] = true;
-
-		header("Location: ./index.php");
-	
-	}
-	  
-	If(ValueRangeCheck($uplimit)){
-	
-		session_start();
-
-		$_SESSION['error'] = true;
-
-		header("Location: ./index.php");
-	
-	}
 	  
 	include './connect.php';
 	  
