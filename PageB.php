@@ -70,7 +70,7 @@
 	  
 //  	$stmt = $pdo->prepare($sql);
 	  
-// 	echo "0";
+	echo "0";
 	  
 // 	$stmt = $pdo -> query($sql);
 	  
