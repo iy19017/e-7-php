@@ -4,10 +4,10 @@
 </head>
   <body>
       <?php
-	$shohin = $_POST['name'];
-	$kingaku = $_POST['money'];
-	$today = date('Y-m-d');
-	print("$shohin $kingaku $today");
+// 	$shohin = $_POST['name'];
+// 	$kingaku = $_POST['money'];
+// 	$today = date('Y-m-d');
+// 	print("$shohin $kingaku $today");
 	?>
   <br>
   <form  method = "POST">
@@ -60,6 +60,9 @@
 		
 // 	}  
 	  
+	$shohin = $_POST['name'];
+	$kingaku = $_POST['money'];
+	$today = date('Y-m-d');
 	  
 	print("$shohin $kingaku $today");
 	
