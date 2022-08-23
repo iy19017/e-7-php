@@ -4,10 +4,10 @@
 </head>
   <body>
       <?php
-// 	$shohin = $_GET['name'];
-// 	$kingaku = $_GET['money'];
-// 	$today = date('Y-m-d');
-// 	print("$shohin $kingaku $today");
+	$shohin = $_GET['name'];
+	$kingaku = $_GET['money'];
+	$today = date('Y-m-d');
+	print("$shohin $kingaku $today");
 	?>
   <br>
   <form method="POST">
