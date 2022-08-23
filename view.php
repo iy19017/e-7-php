@@ -20,35 +20,35 @@
 	  
 	$uplimit = $_POST['uplimit'];
 	  
-	If(SearchNameCheck($name)){
+// 	If(SearchNameCheck($name)){
 	  
-		session_start();
+// 		session_start();
 
-		$_SESSION['error'] = true;
+// 		$_SESSION['error'] = true;
 
-		header("Location: ./index.php");
+// 		header("Location: ./index.php");
 	  
-  	}
+//   	}
 	  
-	If(ValueRangeCheck($downlimit)){
+// 	If(ValueRangeCheck($downlimit)){
 	
-		session_start();
+// 		session_start();
 
-		$_SESSION['error'] = true;
+// 		$_SESSION['error'] = true;
 
-		header("Location: ./index.php");
+// 		header("Location: ./index.php");
 	
-	}
+// 	}
 	  
-	If(ValueRangeCheck($uplimit)){
+// 	If(ValueRangeCheck($uplimit)){
 	
-		session_start();
+// 		session_start();
 
-		$_SESSION['error'] = true;
+// 		$_SESSION['error'] = true;
 
-		header("Location: ./index.php");
+// 		header("Location: ./index.php");
 	
-	}
+// 	}
 	  
 	  
 	if(!empty($name)){
