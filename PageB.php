@@ -38,7 +38,7 @@
 		
 	}
 
-  if(isset($_POST['yes'])) {
+//   if(isset($_POST['yes'])) {
 
 // 	try{
 	  
@@ -60,9 +60,6 @@
 		
 // 	}  
 	  
-	$shohin = $_POST['name'];
-	$kingaku = $_POST['money'];
-	$today = date('Y-m-d');
 	  
 	print("$shohin $kingaku $today");
 	
@@ -78,19 +75,19 @@
 	  
 	echo "0";
 	  
-// 	$stmt = $pdo -> query($sql);
+	$stmt = $pdo -> query($sql);
 	  
 	echo "1";
 	  
-// 	$stmt -> execute();
+	$stmt -> execute();
 	  
 // 	print("2");
 	  
-  }
+//   }
 	  
-  else if(isset($_POST['no'])){
+//   else if(isset($_POST['no'])){
 	
-	header("Location: ./index.php") ;
+// 	header("Location: ./index.php") ;
   
-  }
+//   }
   ?>  
