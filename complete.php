@@ -19,12 +19,12 @@
   print ("商品名：${shohin} 価格：${kingaku} を登録しました");
 
   ?>
+	 
+  <br>
 	  
-  <form action="input.php">
-	 <input type="submit" name="return" value="もどる">
-  </form>
+  <button onclick="location.href='confirm.php'">もどる</button>
 	  
-  <a href="search.php">検索</a>
+  <button onclick="location.href='search.php'">検索</button>
 	  
 </body>
 </html>
