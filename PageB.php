@@ -80,6 +80,8 @@
 	  
 // 	print("2");
 	  
+	session_start();
+	  
 	$shohin = $_GET['name'];
 	 
 	$kingaku = $_GET['money'];
