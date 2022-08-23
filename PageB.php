@@ -80,13 +80,13 @@
 	  
 // 	print("2");
 	  
-	$_SESSION['name'] = $_GET['name'];
+	$shohin = $_GET['name'];
 	 
-	$_SESSION['money'] = $_GET['money'];
+	$kingaku = $_GET['money'];
 	  
-// 	$_SESSION['name'] = $shohin;
+	$_SESSION['name'] = $shohin;
 	  
-// 	$_SESSION['money'] = $kingaku;
+	$_SESSION['money'] = $kingaku;
 	
 	header("Location: ./PageB2.php"); 
 	  
