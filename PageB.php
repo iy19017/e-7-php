@@ -36,7 +36,7 @@
 </html>
   <?php
 
-  if(isset($_POST['yes'])) {
+//   if(isset($_POST['yes'])) {
 	  
 	try{
 	  
@@ -61,7 +61,7 @@
 	}  
 	  
 	
-	$sql = "INSERT INTO \"order\" (商品名, 価格, 登録日) VALUES ('".$shohin."', '".$kingaku."', '".data('Y-m-d')."');";
+// 	$sql = "INSERT INTO \"order\" (商品名, 価格, 登録日) VALUES ('".$shohin."', '".$kingaku."', '".data('Y-m-d')."');";
 	  
 //  	$stmt = $pdo->prepare($sql);
 	  
@@ -71,13 +71,13 @@
 
 // 	$stmt->bindParam(':today', $today);
 	  
-	$stmt = $pdo -> query($sql);
+// 	$stmt = $pdo -> query($sql);
 	  
-  }
+//   }
 	  
-  else if(isset($_POST['no'])){
+//   else if(isset($_POST['no'])){
 	
-	header("Location: ./index.php") ;
+// 	header("Location: ./index.php") ;
   
-  }
+//   }
   ?>  
