@@ -22,7 +22,7 @@
 	  
 	If(SearchNameCheck($name)){
 	  
-		session_start();
+	session_start();
   
 	$_SESSION['error'] = true;
 	  
