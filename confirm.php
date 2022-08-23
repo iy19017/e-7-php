@@ -4,8 +4,8 @@
 </head>
   <body>
   <form method="POST">
-	 <input type="submit" name="yes" value="よかった">
-	 <input type="submit" name="no" value="わるかった">
+	 <input type="submit" name="yes" value="登録する">
+	 <input type="submit" name="no" value="取り消し">
   </form>
 </body>
 </html>
