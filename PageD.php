@@ -20,8 +20,6 @@
 
 	$pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 
-	echo "OK";
-
 	} catch(PDOException $e){
 
 	echo "ERROR";
@@ -38,7 +36,7 @@
 	  
 	$rs = $result->fetchAll();
 	  
-	print "<table border=1 cellspacing=1 cellpadding=1>"; // 表の開始 (HTML タグ)
+// 	print "<table border=1 cellspacing=1 cellpadding=1>"; // 表の開始 (HTML タグ)
 	  
 	print "<tr>";　　 // 表の見出し行の始まり
 	print "<th>商品名</th>"; // 表の見出し company
@@ -56,7 +54,7 @@
 	
 	endforeach;
 	
-	print "</table>";
+// 	print "</table>";
 	  
   ?>
     
